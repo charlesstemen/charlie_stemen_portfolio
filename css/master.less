@@ -1,0 +1,30 @@
+@import 'bootstrap/bootstrap.less';
+
+@white: '#fff';
+@black: black;
+@brand-primary: orange;
+
+@import 'globals.less';
+
+nav.navbar{
+	background-color: @white;
+	margin-bottom: 0;
+	.navbar-collapse{
+		border-bottom: 2px solid @brand-primary;
+	}
+}
+
+#banner{
+	background: @black;
+	margin-bottom: 37px;
+}
+
+#portfolio{
+	margin-bottom: 62px;
+	.row{
+		margin-bottom: 14px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
