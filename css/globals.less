@@ -1,6 +1,47 @@
+html{
+	background: @charcoal;
+}
+
 body{
 	padding-top: 76px;
 	color: @charcoal;
+	background: @soft-gray;
+}
+
+nav.navbar{
+	background-color: @soft-gray;
+	margin-bottom: 0;
+	border: none;
+	.navbar-brand{
+		height: auto;
+		padding: 15px 15px 19px;
+	}
+	.navbar-toggle{
+		margin-top: 15px + 4px;
+		span.icon-bar{
+			background: @brand-primary;
+		}
+	}
+	#main-nav{
+		font-size: 16/14em;
+		ul{
+			li{
+				a{
+					padding: 30px 15px 26px;
+				}
+			}
+		}
+	}
+}
+
+footer{
+	background: @charcoal;
+	color: @white;
+	padding: 16px 0;
+	.copyright{
+		padding-left: 32px;
+		font-size: 12.5/14em;
+	}
 }
 
 .item{
