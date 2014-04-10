@@ -1,7 +1,7 @@
-var app = angular.module('portfolio', ['ngRoute', 'app.controllers']);
+var app = angular.module('portfolio', ['ngRoute', 'app.controllers', 'app.services']);
 
 var controllers = angular.module('app.controllers', []);
-// var services = angular.module('app.services', []);
+var services = angular.module('app.services', []);
 // var directives = angular.module('app.directives', []);
 
 app.run(['$rootScope', '$route', function($rootScope, $route){
@@ -23,10 +23,22 @@ app.config(['$routeProvider', function($routeProvider){
 		controller: 'HomeCtrl',
 		pageTitle: ':category'
 	})
-	.when('/id/:projectId', {
+	.when('/project/:projectId', {
 		templateUrl: 'partials/layout/detail.html',
 		controller: 'DetailCtrl',
-		pageTitle: ':projectId'
+		pageTitle: ':projectId',
+		resolve: {
+			theProject: ['$route', '$q', 'ProjectService', function($route, $q, ProjectService){
+				var deferred = $q.defer(),
+						project = ProjectService.getProjectById($route.current.params.projectId);
+				if(project != null){
+					deferred.resolve(project);
+				}else{
+					deferred.reject(null)
+				}
+				return deferred.promise;
+			}]
+		}
 	})
 	.when('/error', {
 		templateUrl: 'partials/layout/error.html',
@@ -37,3 +49,14 @@ app.config(['$routeProvider', function($routeProvider){
 		redirectTo: '/error'
 	});
 }]);
+
+controllers.controller('MainCtrl', '$scope', function($scope){
+
+});
+
+app.filter('offset', function() {
+  return function(input, start) {
+    start = parseInt(start, 10);
+    return input.slice(start);
+  };
+});

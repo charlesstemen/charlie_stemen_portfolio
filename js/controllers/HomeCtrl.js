@@ -1,3 +1,20 @@
-controllers.controller('HomeCtrl', '$scope', function($scope){
-	
-});
+controllers.controller('HomeCtrl', ['$scope', '$routeParams', 'ProjectService', function($scope, $routeParams, ProjectService){
+
+	$scope.categoryFilter = function(item){
+		if($routeParams.category){
+			if(item.categories.indexOf($routeParams.category) != -1){
+				//if current category exists in item's category array - allow to pass filter
+				return true;
+			}else{
+				//dont allow to pass
+				return false;
+			}
+		}else{
+			//if no category selected, all pass filter
+			return true;
+		}
+	}
+
+	$scope.projects = ProjectService.getAllProjects();
+
+}]);
