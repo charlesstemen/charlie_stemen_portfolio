@@ -1,4 +1,4 @@
-var app = angular.module('portfolio', ['ngRoute', 'app.controllers', 'app.services']);
+var app = angular.module('portfolio', ['ngRoute', 'ui.bootstrap', 'app.controllers', 'app.services']);
 
 var controllers = angular.module('app.controllers', []);
 var services = angular.module('app.services', []);
@@ -6,8 +6,10 @@ var services = angular.module('app.services', []);
 
 app.run(['$rootScope', '$route', function($rootScope, $route){
 	$rootScope.pageTitle = 'Home | Charles Stemen';
+	$rootScope.mobileMenuCollapsed = true;
 
 	$rootScope.$on('$routeChangeSuccess', function(){
+		$rootScope.mobileMenuCollapsed = true;
 		$rootScope.pageTitle = $route.current.pageTitle + ' | Charles Stemen';
 	})
 }]);
@@ -50,9 +52,16 @@ app.config(['$routeProvider', function($routeProvider){
 	});
 }]);
 
-controllers.controller('MainCtrl', '$scope', function($scope){
+controllers.controller('MainCtrl', ['$scope', function($scope){
 
-});
+	$scope.toggleCollapse = function(){
+		$scope.$root.mobileMenuCollapsed = !$scope.$root.mobileMenuCollapsed;
+	}
+
+	$scope.closeMenu = function(){
+		$scope.$root.mobileMenuCollapsed = true;
+	}
+}]);
 
 app.filter('offset', function() {
   return function(input, start) {
