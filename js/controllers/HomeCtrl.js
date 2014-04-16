@@ -2,13 +2,14 @@ controllers.controller('HomeCtrl', ['$scope', '$routeParams', 'ProjectService', 
 
 	$scope.categoryFilter = function(item){
 		if($routeParams.category){
-			if(item.categories.indexOf($routeParams.category) != -1){
-				//if current category exists in item's category array - allow to pass filter
-				return true;
-			}else{
-				//dont allow to pass
-				return false;
-			}
+			$.each(item.categories, function(index, category){
+				if(category.slug == $routeParams.category){
+					//if the slug is found return true
+					return true;
+				}
+			});
+			//if we've exited the loop without returning, then the slug hasn't been found
+			return false;
 		}else{
 			//if no category selected, all pass filter
 			return true;

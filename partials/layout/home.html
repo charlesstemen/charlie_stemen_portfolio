@@ -5,12 +5,12 @@
 				<div class="project-tile">
 					<a ng-href="{{ '#/project/' + project.id }}">
 						<div class="image-wrapper">
-	  					<img ng-src="{{ project.mainImg }}" class="img-responsive">
+	  					<img ng-src="{{ project.projectPath + project.mainImg }}" class="img-responsive">
 	  				</div>
 	  				<span class="title">{{ project.title }}</span>
 	  				<ul class="tags">
 	  					<li ng-repeat="category in project.categories">
-	  						<a ng-href="{{ '#/show/' + category }}">{{ category }}{{ !$last ? ', ' : '' }}</a>
+	  						<a ng-href="{{ '#/show/' + category.slug }}">{{ category.title }}{{ !$last ? ', ' : '' }}</a>
 	  					</li>
 	  				</ul>
 					</a>

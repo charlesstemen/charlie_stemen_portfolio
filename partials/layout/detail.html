@@ -12,7 +12,7 @@
 				</div>
 				<div class="slider-wrap">
 					<ul class="plain">
-						<li ng-repeat="asset in firstSection.assets"><img class="img-responsive" ng-src="{{ asset }}"></li>
+						<li ng-repeat="asset in firstSection.assets"><img class="img-responsive" ng-src="{{ project.projectPath + asset }}"></li>
 					</ul>
 				</div>
 			</div>
@@ -25,7 +25,7 @@
 				</div>
 				<div class="slider-wrap">
 					<ul class="plain">
-						<li ng-repeat="asset in section.assets"><img class="img-responsive" ng-src="{{ asset }}"></li>
+						<li ng-repeat="asset in section.assets"><img class="img-responsive" ng-src="{{ project.projectPath + asset }}"></li>
 					</ul>
 				</div>
 			</div>

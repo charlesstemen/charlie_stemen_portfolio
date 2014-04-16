@@ -261,7 +261,7 @@
 	"id": 6,
 	"title": "McIntyre Golf",
 	"projectPath": "images/projects/mcintyre-golf/",
-	"mainImg": "thumbnail/mcintyre-golf-12pack.jpg",
+	"mainImg": "thumbnail/mcyintire-golf-12pack.jpg",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -283,7 +283,7 @@
 	"id": 7,
 	"title": "Stray Travel",
 	"projectPath": "images/projects/stray-travel/",
-	"mainImg": "thumbnail/stray-travel.jpg",
+	"mainImg": "thumbnail/stray-travel.png",
 	"categories": [
 		{
 			"title": "Video",
@@ -302,7 +302,7 @@
 	"id": 8,
 	"title": "Talking Graffiti w Ivan Miller",
 	"projectPath": "images/projects/talking-graffiti/",
-	"mainImg": "thumbnail/talking-graffiti.jpg",
+	"mainImg": "thumbnail/talking-graffiti.png",
 	"categories": [
 		{
 			"title": "Video",
@@ -348,7 +348,7 @@
 	"id": 10,
 	"title": "Action",
 	"projectPath": "images/projects/action/",
-	"mainImg": "thumbnail/hunter-tyrell-dfd.jpg",
+	"mainImg": "thumbnail/hunter-tyrrell-dfd.jpg",
 	"categories": [
 		{
 			"title": "Photography",
@@ -398,7 +398,7 @@
 				"the-thaw.jpg",
 				"fiji-stump.jpg",
 				"mountain-reflection.jpg",
-				"stairs-into-water-light.jpg",
+				"stairs-into-water-night.jpg",
 				"wanaka-pano.jpg",
 				"the-jungle.jpg",
 				"winooski-long-exposure.jpg",
@@ -413,7 +413,7 @@
 	"id": 12,
 	"title": "Portraits",
 	"projectPath": "images/projects/portraits/",
-	"mainImg": "thumbnail/luke-chilling-thumbnail.jpg",
+	"mainImg": "thumbnail/luke-chillin-thumbnail.jpg",
 	"categories": [
 		{
 			"title": "Photography",
@@ -428,8 +428,7 @@
 				"connor-full-body.jpg",
 				"gags-slangin.jpg",
 				"play-to-win.jpg",
-				"luke-chilling-at-the-4.jpg",
-				"kink.jpg",
+				"luke-chillin-at-the-4-kink.jpg",
 				"jim-at-the-lake.jpg",
 				"haley-trippy-tree.jpg"
 			]
