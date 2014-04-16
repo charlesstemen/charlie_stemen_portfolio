@@ -31,12 +31,26 @@ app.config(['$routeProvider', function($routeProvider){
 		pageTitle: ':projectId',
 		resolve: {
 			theProject: ['$route', '$q', 'ProjectService', function($route, $q, ProjectService){
-				var deferred = $q.defer(),
-						project = ProjectService.getProjectById($route.current.params.projectId);
-				if(project != null){
-					deferred.resolve(project);
+				var deferred = $q.defer();
+				if(ProjectService.isInit()){
+					var project = ProjectService.getProjectById($route.current.params.projectId);
+					if(project != null){
+						deferred.resolve(project);
+					}else{
+						deferred.reject(null)
+					}
 				}else{
-					deferred.reject(null)
+					ProjectService.initData()
+						.then(function(data){
+							var project = ProjectService.getProjectById($route.current.params.projectId);
+							if(project != null){
+								deferred.resolve(project);
+							}else{
+								deferred.reject(null)
+							}
+						}, function(response){
+							deferred.reject(null);
+						})
 				}
 				return deferred.promise;
 			}]

@@ -1,0 +1,513 @@
+[{
+	"id": 1,
+	"title": "HG 2015",
+	"projectPath": "images/projects/hg-skis-2015/",
+	"mainImg": "thumbnail/hg-logo-marks.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		},
+		{
+			"title": "Video",
+			"slug": "video"
+		}
+	],
+	"description": "<p>2015 rebrand for this craft ski company that embraces the surrounding youth 'park' skiing culture.  My design solutions focused on creating a connection between where the companies roots began, taking inspiration from everything for the vermont state flag, to Sugarbush Resort.</p><ul class='plain'><li><a href='http://hgskis.com'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis'>instagram.com/hgskis</a></li></ul>",
+	"sections": [
+		{
+			"title": "Logo & Marks",
+			"assets": [
+				"hg-logo-marks.jpg",
+				"hg-logo-marks2.jpg",
+				"hg-logo-marks3.jpg",
+				"hg-logo-marks4.jpg",
+				"hg-logo-marks5.jpg"
+			]
+		},
+		{
+			"title": "Retail Lookbook",
+			"assets": [
+				"hg-catalog.jpg",
+				"hg-catalog2.jpg",
+				"hg-catalog3.jpg",
+				"hg-catalog4.jpg"
+			]
+		},
+		{
+			"title": "Apparel Line",
+			"assets": [
+				"hg-apparel.jpg"
+			]
+		},
+		{
+			"title": "Tradeshow Print Materials",
+			"assets": [
+				"hg-print.jpg",
+				"hg-print2.jpg",
+				"hg-print4.jpg",
+				"hg-print5.jpg",
+				"hg-print3.jpg",
+				"hg-print6.jpg",
+				"hg-wax.jpg"
+			]
+		},
+		{
+			"title": "Web Presence",
+			"assets": [
+				"hg-web.jpg",
+				"hg-web2.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 2,
+	"title": "Dais Visual Culture Mag",
+	"projectPath": "images/projects/dais/",
+	"mainImg": "thumbnail/dais.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		},
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "<p>I work with a group of talented skiers, snowboarders, skaters, and artists that collectively identify under the crew name of DAIS. This is a shortened version of what the magazine would be.  The photography is the work of mine and others.</p>",
+	"sections": [
+		{
+			"title": "DAIS",
+			"assets": [
+				"dais.jpg",
+				"dais2.jpg",
+				"dais3.jpg",
+				"dais4.jpg",
+				"dais5.jpg",
+				"dais6.jpg",
+				"dais7.jpg",
+				"dais8.jpg",
+				"dais9.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 3,
+	"title": "Winter Garden",
+	"projectPath": "images/projects/winter-garden/",
+	"mainImg": "thumbnail/winter-garden-logo.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>Winter Garden is the result of a semester long thesis project comparing freestyle skiing &amp; snowboarding to more publicly accepted sports like skateboarding.  The mission of Winter Garden is to identify the need for an outlet in cities and town for park skiing and riding.  This would be done through the incorporation of public art into skatepark style, publicl available park features.  The handmade process book covered all parts of the project from idea development to final outcomes.  The poster and post cards, for instance, would act as public invitations to the opening event at a location in Burlington.  The booklet would act as a means of proposing the project to a city with the aim of raising funding.</p>",
+	"sections": [
+		{
+			"title": "Logo",
+			"assets": [
+				"winter-garden-logo.jpg"
+			]
+		},
+		{
+			"title": "Print Materials",
+			"assets": [
+				"winter-garden-print.jpg",
+				"winter-garden-print2.jpg"
+			]
+		},
+		{
+			"title": "Website",
+			"assets": [
+				"winter-garden-website.jpg"
+			]
+		},
+		{
+			"title": "Project Based Booklet",
+			"assets": [
+				"winter-garden-booklet.jpg",
+				"winter-garden-booklet2.jpg",
+				"winter-garden-booklet3.jpg",
+				"winter-garden-booklet4.jpg",
+				"winter-garden-booklet5.jpg",
+				"winter-garden-booklet6.jpg"
+			]
+		},
+		{
+			"title": "Process Book",
+			"assets": [
+				"winter-garden-process-book.jpg",
+				"winter-garden-process-book2.jpg",
+				"winter-garden-process-book3.jpg",
+				"winter-garden-process-book4.jpg",
+				"winter-garden-process-book5.jpg",
+				"winter-garden-process-book6.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 4,
+	"title": "Laced Shoe Stringers",
+	"projectPath": "images/projects/laced/",
+	"mainImg": "thumbnail/laced-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		},
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "<p>Class assignment to create a brand from scratch and build out branded materials.  Laced is aimed to apply branding to a typically unbranded item: shoelaces.  Hinting at youth culture, action sports, and drug culture - Laced as a project provided outlets for me to incorporate my skills in photography with my designs.</p>",
+	"sections": [
+		{
+			"title": "Logo",
+			"assets": [
+				"laced-logo.jpg"
+			]
+		},
+		{
+			"title": "Print Materials",
+			"assets": [
+				"laced-print.jpg",
+				"laced-print2.jpg"
+			]
+		},
+		{
+			"title": "Packaging",
+			"assets": [
+				"laced-package.jpg",
+				"laced-package2.jpg",
+				"laced-package3.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 5,
+	"title": "Aurora",
+	"projectPath": "images/projects/aurora/",
+	"mainImg": "thumbnail/connor-scopin-rail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		},
+		{
+			"title": "Video",
+			"slug": "video"
+		},
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "<p>Aurora is a film recapping the HG Skis team's 2013 season filming in the streets.  This 12 minute film was premiered in Burlington, VT, and Dever, Colorado in collaboration with Level 1 Production film, Partly Cloudy",
+	"sections": [
+		{
+			"title": "Mark",
+			"assets": [
+				"aurora-mark2.jpg",
+				"aurora-mark.jpg"
+			]
+		},
+		{
+			"title": "Print Materials",
+			"assets": [
+				"aurora-print.jpg",
+				"aurora-print2.jpg"
+			]
+		},
+		{
+			"title": "Motion Graphics & Title Work",
+			"assets": [
+				"aurora-motion.jpg",
+				"aurora-motion2.jpg"
+			]
+		},
+		{
+			"title": "Web Presence",
+			"assets": [
+				"aurora-web.jpg"
+			]
+		},
+		{
+			"title": "Full Film",
+			"vimeoId": "76303360"
+		},
+		{
+			"title": "photos",
+			"assets": [
+				"the-bowl-bw2.jpg",
+				"connor-skurting-ledge.jpg",
+				"connor-at-stratton-rail.jpg",
+				"connor-safety-grab.jpg",
+				"james-bowl.jpg",
+				"connor-above-tranny.jpg",
+				"connor-at-bridge.jpg",
+				"cole-and-connor-at-fence.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 6,
+	"title": "McIntyre Golf",
+	"projectPath": "images/projects/mcintyre-golf/",
+	"mainImg": "thumbnail/mcintyre-golf-12pack.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>Working with an upper level designer, and team of marketers at Brandthropology, I helped design the packaging for McIntyre's Golfballs.  I also photographed the packages.</p>",
+	"sections": [
+		{
+			"title": "Package Design and Photography",
+			"assets": [
+				"mcintyre-golf-12pack.jpg",
+				"the_rtj.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 7,
+	"title": "Stray Travel",
+	"projectPath": "images/projects/stray-travel/",
+	"mainImg": "thumbnail/stray-travel.jpg",
+	"categories": [
+		{
+			"title": "Video",
+			"slug": "video"
+		}
+	],
+	"description": "<p>A short video I made for Stray Travel in New Zealand while on my semester abroad there in the summer/fall of 2012 (their winter).  Video was filmed in a little over a week of traveling down the west coast of the south island.  Aotearoa is quite a magical place.</p>",
+	"sections": [
+		{
+			"title": "Full Film",
+			"vimeoId": "57016468"
+		}
+	]
+},
+{
+	"id": 8,
+	"title": "Talking Graffiti w Ivan Miller",
+	"projectPath": "images/projects/talking-graffiti/",
+	"mainImg": "thumbnail/talking-graffiti.jpg",
+	"categories": [
+		{
+			"title": "Video",
+			"slug": "video"
+		}
+	],
+	"description": "<p>I met up with Castle during my 5 month study in Wellington, New Zealand.  Coming from South Africa, Ivan has an interesting background that forms his perspectives and pieces to be unlike any I've really seen before.  There is a great array of graffiti style artwork in the area, and much of it coming from his crew, Pirates.  It was great to get to talk and paint with an artist of the area nad see how perspectives on art like this change country to country.</p>",
+	"sections": [
+		{
+			"title": "Full Film",
+			"vimeoId": "54904281"
+		}
+	]
+},
+{
+	"id": 9,
+	"title": "HG Skis Electronics",
+	"projectPath": "images/projects/hg-skis-electronics/",
+	"mainImg": "thumbnail/electronics12.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>Ski graphic produced for the 2013 run of the HG Skis Electronics park ski.</p>",
+	"sections": [
+		{
+			"title": "Graphic",
+			"assets": [
+				"electronics.jpg"
+			]
+		},
+		{
+			"title": "Product",
+			"assets": [
+				"electronics-air.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 10,
+	"title": "Action",
+	"projectPath": "images/projects/action/",
+	"mainImg": "thumbnail/hunter-tyrell-dfd.jpg",
+	"categories": [
+		{
+			"title": "Photography",
+			"slug": "photography"
+		},
+		{
+			"title": "Video",
+			"slug": "slug"
+		}
+	],
+	"description": "",
+	"sections": [
+		{
+			"title": "Shots",
+			"assets": [
+				"hunter-dfd.jpg",
+				"james-amodeo-4-kink.jpg",
+				"cole-drop-rail.jpg",
+				"james-amodeo-down-rail.jpg",
+				"rorys-rail.jpg",
+				"nate-stemen-mini-ramp.jpg"
+			]
+		},
+		{
+			"title": "Reel",
+			"vimeoId": "91683093"
+		}
+	]
+},
+{
+	"id": 11,
+	"title": "Places",
+	"projectPath": "images/projects/places/",
+	"mainImg": "thumbnail/wanaka-pano-shortened.jpg",
+	"categories": [
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "",
+	"sections": [
+		{
+			"title": "Shots",
+			"assets": [
+				"red-rocks-long-exposure.jpg",
+				"the-thaw.jpg",
+				"fiji-stump.jpg",
+				"mountain-reflection.jpg",
+				"stairs-into-water-light.jpg",
+				"wanaka-pano.jpg",
+				"the-jungle.jpg",
+				"winooski-long-exposure.jpg",
+				"tower-stars-long-exposure.jpg",
+				"poles.jpg",
+				"burlington-waterfront.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 12,
+	"title": "Portraits",
+	"projectPath": "images/projects/portraits/",
+	"mainImg": "thumbnail/luke-chilling-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "",
+	"sections": [
+		{
+			"title": "Shots",
+			"assets": [
+				"connor-full-body.jpg",
+				"gags-slangin.jpg",
+				"play-to-win.jpg",
+				"luke-chilling-at-the-4.jpg",
+				"kink.jpg",
+				"jim-at-the-lake.jpg",
+				"haley-trippy-tree.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 13,
+	"title": "Products",
+	"projectPath": "images/projects/products/",
+	"mainImg": "thumbnail/mcyntire-golf-12-ball-sleeve.jpg",
+	"categories": [
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "",
+	"sections": [
+		{
+			"title": "Shots",
+			"assets": [
+				"mcintyre-12pack.jpg",
+				"hg-coaches-jacket.jpg",
+				"brandthro-bike.jpg",
+				"marlboro.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 14,
+	"title": "Life",
+	"projectPath": "images/projects/life/",
+	"mainImg": "thumbnail/jim-at-the-lake-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "",
+	"sections": [
+		{
+			"title": "Shots",
+			"assets": [
+				"climbing-glaciers.jpg",
+				"jim-at-the-lake.jpg",
+				"crew-in-the-desert.jpg",
+				"rainy-days.jpg",
+				"connor-at-trippy-tree.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 15,
+	"title": "Experimental",
+	"projectPath": "images/projects/experimental/",
+	"mainImg": "thumbnail/church-st-light-play.jpg",
+	"categories": [
+		{
+			"title": "Photography",
+			"slug": "photography"
+		}
+	],
+	"description": "",
+	"sections": [
+		{
+			"title": "Shots",
+			"assets": [
+				"church-st-light-play.jpg",
+				"curved-building.jpg",
+				"square-film-scratched.jpg",
+				"parking-garage-spiral.jpg",
+				"water-film-burn.jpg",
+				"playing-with-fire.jpg"
+			]
+		}
+	]
+}]

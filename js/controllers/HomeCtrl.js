@@ -15,6 +15,13 @@ controllers.controller('HomeCtrl', ['$scope', '$routeParams', 'ProjectService', 
 		}
 	}
 
-	$scope.projects = ProjectService.getAllProjects();
+	if(ProjectService.isInit()){
+		$scope.projects = ProjectService.getAllProjects();
+	}else{
+		ProjectService.initData()
+			.then(function(data){
+				$scope.projects = data;
+			});
+	}
 
 }]);
