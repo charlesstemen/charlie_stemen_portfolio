@@ -2,8 +2,12 @@ controllers.controller('DetailCtrl', ['$scope', '$sce', 'theProject', function($
 
 	$scope.project = theProject;
 
-	$scope.firstSection = theProject.sections[0];
-
-	$scope.projectDescription = $sce.trustAsHtml($scope.project.description);
+	$scope.makeHTMLSafe = function(code){
+		if(code != ''){
+			return $sce.trustAsHtml(code);
+		}else{
+			return null;
+		}
+	}
 
 }]);

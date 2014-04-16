@@ -1,9 +1,9 @@
 <section id="project-detail">
 	<div class="container">
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-4 col-md-push-8 col-lg-4 col-lg-push-8">
 				<h1>{{ project.title }}</h1>
-				<div ng-bind-html="projectDescription"></div>
+				<div ng-bind-html="makeHTMLSave(project.description)"></div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-8 col-md-pull-4 col-lg-8 col-lg-pull-4">
 				<h2 class="section-title">{{ firstSection.title }}</h2>
@@ -16,18 +16,19 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="row" ng-repeat="section in project.sections | offset: 1">
+		</div> -->
+		<div class="row" ng-repeat="section in project.sections">
 			<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
 				<h2 class="section-title">{{ section.title }}</h2>
-				<div class="section-controls">
+				<div class="section-controls" ng-show="section.assets.length">
 					<p><a href="javascript:void(0)">Previous</a> / <a href="javascript:void(0)">Next</a> (1 out of 5)</p>
 				</div>
-				<div class="slider-wrap">
+				<div class="slider-wrap" ng-show="section.assets.length">
 					<ul class="plain">
 						<li ng-repeat="asset in section.assets"><img class="img-responsive" ng-src="{{ project.projectPath + asset }}"></li>
 					</ul>
 				</div>
+				<div class="video-wrap" ng-show="section.vimeoEmbed" ng-bind-html="makeHTMLSafe(section.vimeoEmbed)"></div>
 			</div>
 		</div>
 	</div>

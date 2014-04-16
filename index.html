@@ -57,6 +57,7 @@
   <script type="text/javascript" src="js/thirdparty/angular.1.2.14.min.js"></script>
   <script type="text/javascript" src="js/thirdparty/angular-route.1.2.14.min.js"></script>
   <script type="text/javascript" src="js/thirdparty/bootstrap-custom/ui-bootstrap-custom-0.10.0.min.js"></script>
+  <script type="text/javascript" src="js/thirdparty/fitvids.js"></script>
   <!-- app bootstrap -->
   <script type="text/javascript" src="js/main.js"></script>
   <!-- controllers -->
@@ -65,5 +66,13 @@
   <script type="text/javascript" src="js/controllers/ErrorCtrl.js"></script>
   <!-- services -->
   <script type="text/javascript" src="js/services/ProjectService.js"></script>
+
+  <script type="text/javascript">
+  	$(function(){
+  		setTimeout(function(){
+				$('.video-wrap').fitVids();
+			}, 200);
+  	})
+	</script>
 </body>
 </html>

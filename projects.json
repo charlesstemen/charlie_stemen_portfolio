@@ -240,7 +240,8 @@
 		},
 		{
 			"title": "Full Film",
-			"vimeoId": "76303360"
+			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/76303360?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"assets": []
 		},
 		{
 			"title": "photos",
@@ -294,7 +295,8 @@
 	"sections": [
 		{
 			"title": "Full Film",
-			"vimeoId": "57016468"
+			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/57016468?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"assets": []
 		}
 	]
 },
@@ -313,7 +315,8 @@
 	"sections": [
 		{
 			"title": "Full Film",
-			"vimeoId": "54904281"
+			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/54904281?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"assets": []
 		}
 	]
 },
@@ -374,7 +377,8 @@
 		},
 		{
 			"title": "Reel",
-			"vimeoId": "91683093"
+			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/91683093?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"assets": []
 		}
 	]
 },
@@ -382,7 +386,7 @@
 	"id": 11,
 	"title": "Places",
 	"projectPath": "images/projects/places/",
-	"mainImg": "thumbnail/wanaka-pano-shortened.jpg",
+	"mainImg": "red-rocks-long-exposure.jpg",
 	"categories": [
 		{
 			"title": "Photography",

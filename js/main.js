@@ -12,6 +12,11 @@ app.run(['$rootScope', '$route', function($rootScope, $route){
 		$rootScope.mobileMenuCollapsed = true;
 		$rootScope.pageTitle = $route.current.pageTitle + ' | Charles Stemen';
 	})
+	$rootScope.$on('$viewContentLoaded', function(){
+		setTimeout(function(){
+			$('.video-wrap').fitVids();
+		}, 200);
+  });
 }]);
 
 app.config(['$routeProvider', function($routeProvider){
