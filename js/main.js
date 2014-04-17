@@ -15,6 +15,21 @@ app.run(['$rootScope', '$route', function($rootScope, $route){
 	$rootScope.$on('$viewContentLoaded', function(){
 		setTimeout(function(){
 			$('.video-wrap').fitVids();
+			$('.affix-container').affix({
+				top: 364
+			});
+			$('.affix-container').css({
+				width: function(){
+					return $(this).parent().width()+'px';
+				}
+			});
+			$(window).on('resize', function(){
+				$('.affix-container').css({
+					width: function(){
+						return $(this).parent().width()+'px';
+					}
+				});
+			});
 		}, 200);
   });
 }]);

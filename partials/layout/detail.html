@@ -8,14 +8,14 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-8 col-md-pull-4 col-lg-8 col-lg-pull-4">
-				<div class="section" ng-repeat="section in project.sections">
+				<div class="section" ng-repeat="section in project.sections" ng-controller="PaginationCtrl" ng-init="section = section">
 					<h2 class="section-title">{{ section.title }}</h2>
 					<div class="section-controls" ng-show="section.assets.length">
-						<p><a href="javascript:void(0)">Previous</a> / <a href="javascript:void(0)">Next</a> (1 out of 5)</p>
+						<p><a href="javascript:void(0)" ng-click="prevPage()">Previous</a> / <a href="javascript:void(0)" ng-click="nextPage()">Next</a> {{'('+currPage+' out of '+pageCount+')'}}</p>
 					</div>
 					<div class="slider-wrap" ng-show="section.assets.length">
 						<ul class="plain">
-							<li ng-repeat="asset in section.assets"><img class="img-responsive" ng-src="{{ project.projectPath + asset }}"></li>
+							<li ng-repeat="asset in section.assets | offset: currPage*itemsPerPage | limitTo: itemsPerPage"><img class="img-responsive" ng-src="{{ project.projectPath + asset }}"></li>
 						</ul>
 					</div>
 					<div class="video-wrap" ng-show="section.vimeoEmbed" ng-bind-html="makeHTMLSafe(section.vimeoEmbed)"></div>
