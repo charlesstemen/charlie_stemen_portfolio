@@ -3,7 +3,7 @@ controllers.controller('PaginationCtrl', ['$scope', function($scope){
 
 	$scope.currPage = 1;
 	$scope.itemsPerPage = 1;
-	$scope.pageCount = $scope.section.assets.length-1;
+	$scope.pageCount = $scope.section.assets.length;
 	$scope.prevPage = function(){
 		if($scope.currPage > 1){
 			$scope.currPage--;

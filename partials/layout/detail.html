@@ -15,7 +15,7 @@
 					</div>
 					<div class="slider-wrap" ng-show="section.assets.length">
 						<ul class="plain">
-							<li ng-repeat="asset in section.assets | offset: currPage*itemsPerPage | limitTo: itemsPerPage"><img class="img-responsive" ng-src="{{ project.projectPath + asset }}"></li>
+							<li ng-repeat="asset in section.assets | offset: (currPage*itemsPerPage)-1 | limitTo: itemsPerPage"><img class="img-responsive" ng-src="{{ project.projectPath + asset }}"></li>
 						</ul>
 					</div>
 					<div class="video-wrap" ng-show="section.vimeoEmbed" ng-bind-html="makeHTMLSafe(section.vimeoEmbed)"></div>
