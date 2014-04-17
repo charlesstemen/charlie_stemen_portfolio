@@ -49,6 +49,11 @@
 				"hg-print5.jpg",
 				"hg-print3.jpg",
 				"hg-print6.jpg",
+			]
+		},
+		{
+			"title": "Icerider Wax Packaging",
+			"assets": [
 				"hg-wax.jpg"
 			]
 		},
