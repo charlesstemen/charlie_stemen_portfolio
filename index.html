@@ -54,6 +54,7 @@
 	</footer>
 	<!-- thirdparty -->
   <script type="text/javascript" src="js/thirdparty/jquery.1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/thirdparty/bootstrap-affix.js"></script>
   <script type="text/javascript" src="js/thirdparty/angular.1.2.14.min.js"></script>
   <script type="text/javascript" src="js/thirdparty/angular-route.1.2.14.min.js"></script>
   <script type="text/javascript" src="js/thirdparty/bootstrap-custom/ui-bootstrap-custom-0.10.0.min.js"></script>
@@ -71,6 +72,21 @@
   	$(function(){
   		setTimeout(function(){
 				$('.video-wrap').fitVids();
+				$('.affix-container').affix({
+					top: 364
+				});
+				$('.affix-container').css({
+					width: function(){
+						return $(this).parent().width()+'px';
+					}
+				});
+				$(window).on('resize', function(){
+					$('.affix-container').css({
+						width: function(){
+							return $(this).parent().width()+'px';
+						}
+					});
+				})
 			}, 200);
   	})
 	</script>

@@ -70,3 +70,19 @@ ul.plain, ol.plain{
 	margin: 0;
 	padding: 0;
 }
+
+.affix-container{
+	h1,h2,h3,h4,h5{
+		margin-top: 0;
+	}
+	@media(max-width: @screen-xs-max){
+		position: static !important;
+		width: auto !important;
+	}
+}
+
+.section:first-child{
+	h1,h2,h3,h4,h5{
+		margin-top: 0;
+	}
+}

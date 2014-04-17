@@ -6,6 +6,7 @@ controllers.controller('DetailCtrl', ['$scope', '$sce', 'theProject', function($
 		if(code != ''){
 			return $sce.trustAsHtml(code);
 		}else{
+			console.log('here');
 			return null;
 		}
 	}
