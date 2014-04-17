@@ -61,6 +61,11 @@ app.config(['$routeProvider', function($routeProvider){
 			}]
 		}
 	})
+	.when('/contact', {
+		templateUrl: 'partials/layout/contact.html',
+		controller: 'ErrorCtrl',
+		pageTitle: 'Contact'
+	})
 	.when('/error', {
 		templateUrl: 'partials/layout/error.html',
 		controller: 'ErrorCtrl',

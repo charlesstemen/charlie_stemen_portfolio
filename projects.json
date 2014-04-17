@@ -154,7 +154,7 @@
 	"id": 4,
 	"title": "Laced Shoe Stringers",
 	"projectPath": "images/projects/laced/",
-	"mainImg": "thumbnail/laced-thumbnail.jpg",
+	"mainImg": "thumbnail/laced-thumbnail_cropped.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -284,7 +284,7 @@
 	"id": 7,
 	"title": "Stray Travel",
 	"projectPath": "images/projects/stray-travel/",
-	"mainImg": "thumbnail/stray-travel.png",
+	"mainImg": "thumbnail/stray-travel_cropped.png",
 	"categories": [
 		{
 			"title": "Video",
@@ -304,7 +304,7 @@
 	"id": 8,
 	"title": "Talking Graffiti w Ivan Miller",
 	"projectPath": "images/projects/talking-graffiti/",
-	"mainImg": "thumbnail/talking-graffiti.png",
+	"mainImg": "thumbnail/talking-graffiti_cropped.png",
 	"categories": [
 		{
 			"title": "Video",
@@ -362,7 +362,7 @@
 			"slug": "slug"
 		}
 	],
-	"description": "",
+	"description": "<p>A collection of action sport photography / cinematography.</p>",
 	"sections": [
 		{
 			"title": "Shots",
@@ -393,7 +393,7 @@
 			"slug": "photography"
 		}
 	],
-	"description": "",
+	"description": "<p>A collection of landscapes and scenes I've come across.</p>",
 	"sections": [
 		{
 			"title": "Shots",
@@ -424,7 +424,7 @@
 			"slug": "photography"
 		}
 	],
-	"description": "",
+	"description": "<p>A collection of people in their environments.</p>",
 	"sections": [
 		{
 			"title": "Shots",
@@ -443,14 +443,14 @@
 	"id": 13,
 	"title": "Products",
 	"projectPath": "images/projects/products/",
-	"mainImg": "thumbnail/mcyntire-golf-12-ball-sleeve.jpg",
+	"mainImg": "brandthro-bike.jpg",
 	"categories": [
 		{
 			"title": "Photography",
 			"slug": "photography"
 		}
 	],
-	"description": "",
+	"description": "<p>A collection of product photography.</p>",
 	"sections": [
 		{
 			"title": "Shots",
@@ -474,7 +474,7 @@
 			"slug": "photography"
 		}
 	],
-	"description": "",
+	"description": "<p>A collection of people exploring our surroundings.</p>",
 	"sections": [
 		{
 			"title": "Shots",
@@ -499,7 +499,7 @@
 			"slug": "photography"
 		}
 	],
-	"description": "",
+	"description": "<p>A collection of abstract experiments with photography.</p>",
 	"sections": [
 		{
 			"title": "Shots",
