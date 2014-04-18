@@ -1,8 +1,8 @@
-var app = angular.module('portfolio', ['ngRoute', 'ui.bootstrap', 'app.controllers', 'app.services']);
+var app = angular.module('portfolio', ['ngRoute', 'ui.bootstrap', 'app.controllers', 'app.services', 'app.directives']);
 
 var controllers = angular.module('app.controllers', []);
 var services = angular.module('app.services', []);
-// var directives = angular.module('app.directives', []);
+var directives = angular.module('app.directives', []);
 
 app.run(['$rootScope', '$route', function($rootScope, $route){
 	$rootScope.pageTitle = 'Home | Charles Stemen';

@@ -1,0 +1,6 @@
+<div class="slider">
+	<p ng-show="images.length > 1"><a href="javascript:void(0)" ng-click="prev()">Previous</a> / <a href="javascript:void(0)" ng-click="next()">Next</a> {{'('+currentIndex+' out of '+images.length+')'}}</p>
+	<div class="slide" ng-repeat="image in images" ng-show="imageProxy[$index].visible">
+		<img class="img-responsive" ng-src="{{ projectPath + image }}">
+	</div>
+</div>

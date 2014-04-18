@@ -2,7 +2,7 @@
 	"id": 1,
 	"title": "HG 2015",
 	"projectPath": "images/projects/hg-skis-2015/",
-	"mainImg": "thumbnail/hg-logo-marks.jpg",
+	"mainImg": "thumbnail/hg-logo-marks.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -70,7 +70,7 @@
 	"id": 2,
 	"title": "Dais Visual Culture Mag",
 	"projectPath": "images/projects/dais/",
-	"mainImg": "thumbnail/dais.jpg",
+	"mainImg": "thumbnail/dais.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -103,7 +103,7 @@
 	"id": 3,
 	"title": "Winter Garden",
 	"projectPath": "images/projects/winter-garden/",
-	"mainImg": "thumbnail/winter-garden-logo.jpg",
+	"mainImg": "thumbnail/winter-garden-logo.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -199,7 +199,7 @@
 	"id": 5,
 	"title": "Aurora",
 	"projectPath": "images/projects/aurora/",
-	"mainImg": "thumbnail/connor-scopin-rail.jpg",
+	"mainImg": "thumbnail/connor-scopin-rail.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -267,7 +267,7 @@
 	"id": 6,
 	"title": "McIntyre Golf",
 	"projectPath": "images/projects/mcintyre-golf/",
-	"mainImg": "thumbnail/mcyintire-golf-12pack.jpg",
+	"mainImg": "thumbnail/mcyintire-golf-12pack.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -329,7 +329,7 @@
 	"id": 9,
 	"title": "HG Skis Electronics",
 	"projectPath": "images/projects/hg-skis-electronics/",
-	"mainImg": "thumbnail/electronics12.jpg",
+	"mainImg": "thumbnail/electronics12.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -356,7 +356,7 @@
 	"id": 10,
 	"title": "Action",
 	"projectPath": "images/projects/action/",
-	"mainImg": "thumbnail/hunter-tyrrell-dfd.jpg",
+	"mainImg": "thumbnail/hunter-tyrrell-dfd.png",
 	"categories": [
 		{
 			"title": "Photography",
@@ -391,7 +391,7 @@
 	"id": 11,
 	"title": "Places",
 	"projectPath": "images/projects/places/",
-	"mainImg": "red-rocks-long-exposure.jpg",
+	"mainImg": "thumbnail/red-rocks-long-exposure.png",
 	"categories": [
 		{
 			"title": "Photography",
@@ -422,7 +422,7 @@
 	"id": 12,
 	"title": "Portraits",
 	"projectPath": "images/projects/portraits/",
-	"mainImg": "thumbnail/luke-chillin-thumbnail.jpg",
+	"mainImg": "thumbnail/luke-chillin-thumbnail.png",
 	"categories": [
 		{
 			"title": "Photography",
@@ -448,7 +448,7 @@
 	"id": 13,
 	"title": "Products",
 	"projectPath": "images/projects/products/",
-	"mainImg": "brandthro-bike.jpg",
+	"mainImg": "thumbnail/brandthro-bike.png",
 	"categories": [
 		{
 			"title": "Photography",
@@ -472,7 +472,7 @@
 	"id": 14,
 	"title": "Life",
 	"projectPath": "images/projects/life/",
-	"mainImg": "thumbnail/jim-at-the-lake-thumbnail.jpg",
+	"mainImg": "thumbnail/jim-at-the-lake-thumbnail.png",
 	"categories": [
 		{
 			"title": "Photography",
@@ -497,7 +497,7 @@
 	"id": 15,
 	"title": "Experimental",
 	"projectPath": "images/projects/experimental/",
-	"mainImg": "thumbnail/church-st-light-play.jpg",
+	"mainImg": "thumbnail/church-st-light-play.png",
 	"categories": [
 		{
 			"title": "Photography",
