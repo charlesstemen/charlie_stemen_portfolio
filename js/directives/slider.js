@@ -8,6 +8,8 @@ directives.directive('slider', function(){
 		},
 		link: function(scope, elem, attrs){
 
+			//reference: http://www.sitepoint.com/creating-slide-show-plugin-angularjs/
+
 			scope.currentIndex = 1;
 			
 			scope.next = function(){
