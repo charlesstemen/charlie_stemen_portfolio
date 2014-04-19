@@ -13,7 +13,7 @@
 			"slug": "video"
 		}
 	],
-	"description": "<p>2015 rebrand for this craft ski company that embraces the surrounding youth 'park' skiing culture.  My design solutions focused on creating a connection between where the companies roots began, taking inspiration from everything for the vermont state flag, to Sugarbush Resort.</p><ul class='plain'><li><a href='http://hgskis.com'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis'>instagram.com/hgskis</a></li></ul>",
+	"description": "<p>2015 rebrand for this craft ski company that embraces the surrounding youth 'park' skiing culture.  My design solutions focused on creating a connection between where the companies roots began, taking inspiration from everything for the Vermont state flag, to Sugarbush Resort.</p><ul class='plain'><li><a href='http://hgskis.com'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis'>instagram.com/hgskis</a></li></ul>",
 	"sections": [
 		{
 			"title": "Logo & Marks",
@@ -84,7 +84,7 @@
 	"description": "<p>I work with a group of talented skiers, snowboarders, skaters, and artists that collectively identify under the crew name of DAIS. This is a shortened version of what the magazine would be.  The photography is the work of mine and others.</p>",
 	"sections": [
 		{
-			"title": "DAIS",
+			"title": "Magazine Layout",
 			"assets": [
 				"dais.jpg",
 				"dais2.jpg",
@@ -110,7 +110,7 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>Winter Garden is the result of a semester long thesis project comparing freestyle skiing &amp; snowboarding to more publicly accepted sports like skateboarding.  The mission of Winter Garden is to identify the need for an outlet in cities and town for park skiing and riding.  This would be done through the incorporation of public art into skatepark style, publicl available park features.  The handmade process book covered all parts of the project from idea development to final outcomes.  The poster and post cards, for instance, would act as public invitations to the opening event at a location in Burlington.  The booklet would act as a means of proposing the project to a city with the aim of raising funding.</p>",
+	"description": "<p>Winter Garden is the result of a semester long thesis project comparing freestyle skiing &amp; snowboarding to more publicly accepted sports like skateboarding.  The mission of Winter Garden is to identify the need for an outlet in cities and town for park skiing and riding.  This would be done through incorporating public art into skatepark style, publicly available features.  The handmade process book covered all parts of the project from idea development to final outcomes.  The poster and post cards would act as public invitations to the opening event at a location in Burlington.  The booklet would act as a means of proposing the project to a city with the aim of raising funding.</p>",
 	"sections": [
 		{
 			"title": "Logo",
@@ -170,7 +170,7 @@
 			"slug": "photography"
 		}
 	],
-	"description": "<p>Class assignment to create a brand from scratch and build out branded materials.  Laced is aimed to apply branding to a typically unbranded item: shoelaces.  Hinting at youth culture, action sports, and drug culture - Laced as a project provided outlets for me to incorporate my skills in photography with my designs.</p>",
+	"description": "<p>Laced is aimed to apply branding to a typically unbranded item: shoelaces.  Hinting at youth culture, action sports, and drug culture. Laced as a project provided outlets for me to incorporate my skills in photography with my designs.</p>",
 	"sections": [
 		{
 			"title": "Logo",
@@ -214,7 +214,7 @@
 			"slug": "photography"
 		}
 	],
-	"description": "<p>Aurora is a film recapping the HG Skis team's 2013 season filming in the streets.  This 12 minute film was premiered in Burlington, VT, and Dever, Colorado in collaboration with Level 1 Production film, Partly Cloudy.</p>",
+	"description": "<p>Aurora is a film recapping the HG Skis team's 2013 season filming in the streets.  This 12 minute film was premiered in Burlington, VT, and Dever, CO in collaboration with Level 1 Production film, Partly Cloudy.</p>",
 	"sections": [
 		{
 			"title": "Mark",
@@ -244,7 +244,7 @@
 			]
 		},
 		{
-			"title": "Full Film",
+			"title": "Cinematography & Editing",
 			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/76303360?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 			"assets": []
 		},
@@ -265,7 +265,7 @@
 },
 {
 	"id": 6,
-	"title": "McIntyre Golf",
+	"title": "McIntyre Golf Company",
 	"projectPath": "images/projects/mcintyre-golf/",
 	"mainImg": "thumbnail/mcyintire-golf-12pack.png",
 	"categories": [
@@ -299,7 +299,7 @@
 	"description": "<p>A short video I made for Stray Travel in New Zealand while on my semester abroad there in the summer/fall of 2012 (their winter).  Video was filmed in a little over a week of traveling down the west coast of the south island.  Aotearoa is quite a magical place.</p>",
 	"sections": [
 		{
-			"title": "Full Film",
+			"title": "Cinematography & Editing",
 			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/57016468?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 			"assets": []
 		}
@@ -316,10 +316,10 @@
 			"slug": "video"
 		}
 	],
-	"description": "<p>I met up with Castle during my 5 month study in Wellington, New Zealand.  Coming from South Africa, Ivan has an interesting background that forms his perspectives and pieces to be unlike any I've really seen before.  There is a great array of graffiti style artwork in the area, and much of it coming from his crew, Pirates.  It was great to get to talk and paint with an artist of the area nad see how perspectives on art like this change country to country.</p>",
+	"description": "<p>I met up with Castle during my 5 month study in Wellington, New Zealand.  Coming from South Africa, Ivan has an interesting background that forms his perspectives and pieces to be unlike any I've really seen before.  There is a great array of graffiti style artwork in the area, and much of it coming from his crew, Pirates.  It was great to get to talk and paint with an artist of the area and see how perspectives on art like this change country to country.</p>",
 	"sections": [
 		{
-			"title": "Full Film",
+			"title": "Cinematography & Editing",
 			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/54904281?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 			"assets": []
 		}
@@ -370,7 +370,7 @@
 	"description": "<p>A collection of action sport photography / cinematography.</p>",
 	"sections": [
 		{
-			"title": "Shots",
+			"title": "Photos",
 			"assets": [
 				"hunter-dfd.jpg",
 				"james-amodeo-4-kink.jpg",
@@ -381,7 +381,7 @@
 			]
 		},
 		{
-			"title": "Reel",
+			"title": "Cinematography & Editing",
 			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/91683093?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 			"assets": []
 		}
@@ -401,7 +401,7 @@
 	"description": "<p>A collection of landscapes and scenes I've come across.</p>",
 	"sections": [
 		{
-			"title": "Shots",
+			"title": "Photos",
 			"assets": [
 				"red-rocks-long-exposure.jpg",
 				"the-thaw.jpg",
@@ -432,7 +432,7 @@
 	"description": "<p>A collection of people in their environments.</p>",
 	"sections": [
 		{
-			"title": "Shots",
+			"title": "Photos",
 			"assets": [
 				"connor-full-body.jpg",
 				"gags-slangin.jpg",
@@ -455,10 +455,10 @@
 			"slug": "photography"
 		}
 	],
-	"description": "<p>A collection of product photography.</p>",
+	"description": "<p>A collection of products in their environments.</p>",
 	"sections": [
 		{
-			"title": "Shots",
+			"title": "Photos",
 			"assets": [
 				"mcintyre-12pack.jpg",
 				"hg-coaches-jacket.jpg",
@@ -482,7 +482,7 @@
 	"description": "<p>A collection of people exploring our surroundings.</p>",
 	"sections": [
 		{
-			"title": "Shots",
+			"title": "Photos",
 			"assets": [
 				"climbing-glaciers.jpg",
 				"jim-at-the-lake.jpg",
@@ -507,7 +507,7 @@
 	"description": "<p>A collection of abstract experiments with photography.</p>",
 	"sections": [
 		{
-			"title": "Shots",
+			"title": "Photos",
 			"assets": [
 				"church-st-light-play.jpg",
 				"curved-building.jpg",
