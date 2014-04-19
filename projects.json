@@ -13,7 +13,7 @@
 			"slug": "video"
 		}
 	],
-	"description": "<p>2015 rebrand for this craft ski company that embraces the surrounding youth 'park' skiing culture.  My design solutions focused on creating a connection between where the companies roots began, taking inspiration from everything for the Vermont state flag, to Sugarbush Resort.</p><ul class='plain'><li><a href='http://hgskis.com'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis'>instagram.com/hgskis</a></li></ul>",
+	"description": "<p>2015 rebrand for this craft ski company that embraces the surrounding youth 'park' skiing culture.  My design solutions focused on creating a connection between where the companies roots began, taking inspiration from everything for the Vermont state flag, to Sugarbush Resort.</p><ul class='plain'><li><a href='http://hgskis.com' target='_blank'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis' target='_blank'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis' target='_blank'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis' target='_blank'>instagram.com/hgskis</a></li></ul>",
 	"sections": [
 		{
 			"title": "Logo & Marks",
@@ -249,7 +249,7 @@
 			"assets": []
 		},
 		{
-			"title": "photos",
+			"title": "Photos",
 			"assets": [
 				"the-bowl-bw2.jpg",
 				"connor-skurting-ledge.jpg",
