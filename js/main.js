@@ -14,7 +14,7 @@ app.run(['$rootScope', '$route', function($rootScope, $route){
 	})
 	$rootScope.$on('$viewContentLoaded', function(){
 		setTimeout(function(){
-			$('.video-wrap').fitVids();
+			$('.slide').fitVids();
 			$('.affix-container').affix({
 				top: 364
 			});

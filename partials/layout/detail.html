@@ -10,8 +10,9 @@
 			<div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-8 col-md-pull-4 col-lg-8 col-lg-pull-4">
 				<div class="section" ng-repeat="section in project.sections">
 					<h4 class="section-title">{{ section.title }}</h4>
-					<div slider images="section.assets" project-path="project.projectPath"></div>
-					<div class="video-wrap" ng-show="section.vimeoEmbed" ng-bind-html="makeHTMLSafe(section.vimeoEmbed)"></div>
+					<div image-slider images="section.assets" project-path="project.projectPath"></div>
+					<div video-slider videos="section.vimeoEmbeds"></div>
+					<!-- <div class="video-wrap" ng-show="section.vimeoEmbed" ng-bind-html="makeHTMLSafe(section.vimeoEmbed)"></div> -->
 				</div>
 			</div>
 		</div>

@@ -1,4 +1,4 @@
-directives.directive('slider', function(){
+directives.directive('imageSlider', function(){
 	return {
 		restrict: 'A',
 		replace: true,
@@ -6,6 +6,7 @@ directives.directive('slider', function(){
 			images: '=',
 			projectPath: '='
 		},
+		templateUrl: 'partials/includes/image-slider.html',
 		link: function(scope, elem, attrs){
 
 			//reference: http://www.sitepoint.com/creating-slide-show-plugin-angularjs/
@@ -39,7 +40,6 @@ directives.directive('slider', function(){
 				});
 			}
 
-		},
-		templateUrl: 'partials/includes/slider.html'
+		}
 	}
 })
