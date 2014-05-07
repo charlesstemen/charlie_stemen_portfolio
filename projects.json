@@ -63,6 +63,14 @@
 				"hg-web.jpg",
 				"hg-web2.jpg"
 			]
+		},
+		{
+			"title": "Cinematography & Editing",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/92535227?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+				"<iframe src='//player.vimeo.com/video/85191102?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
 		}
 	]
 },
@@ -245,7 +253,9 @@
 		},
 		{
 			"title": "Full Film",
-			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/76303360?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/76303360?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
 			"assets": []
 		},
 		{
@@ -300,7 +310,9 @@
 	"sections": [
 		{
 			"title": "Cinematography & Editing",
-			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/57016468?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/57016468?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
 			"assets": []
 		}
 	]
@@ -320,7 +332,9 @@
 	"sections": [
 		{
 			"title": "Cinematography & Editing",
-			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/54904281?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/54904281?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
 			"assets": []
 		}
 	]
@@ -382,7 +396,9 @@
 		},
 		{
 			"title": "Cinematography & Editing",
-			"vimeoEmbed": "<iframe src='//player.vimeo.com/video/91683093?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/91683093?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
 			"assets": []
 		}
 	]
@@ -495,6 +511,28 @@
 },
 {
 	"id": 15,
+	"title": "Motion Reel",
+	"projectPath": "images/projects/motion",
+	"mainImg": "thumbnail/motion-reel-thumb.png",
+	"categories": [
+		{
+			"title": "Video",
+			"slug": "video"
+		}
+	],
+	"description": "<p>A collection of animations created for various clients and projects.</p>",
+	"sections": [
+		{
+			"title": "Animations",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/93394040' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		}
+	]
+},
+{
+	"id": 16,
 	"title": "Experimental",
 	"projectPath": "images/projects/experimental/",
 	"mainImg": "thumbnail/church-st-light-play.png",
