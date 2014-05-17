@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-controller="MainCtrl">
-	<nav class="navbar navbar-fixed-top" role="navigation">
+	<header class="navbar navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header clearfix">
 				<button type="button" class="navbar-toggle" ng-click="toggleCollapse()">
@@ -15,43 +15,27 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.png" alt="Charles Stemen"></a>
+				<h1><a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.png" alt="Charles Stemen"></a></h1>
 			</div>
-			<div class="collapse navbar-collapse" id="main-nav" collapse="mobileMenuCollapsed">
+			<nav class="collapse navbar-collapse" id="main-nav" collapse="mobileMenuCollapsed">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#/show/graphic-design" ng-click="closeMenu()">Graphic Design</a></li>
 					<li><a href="#/show/photography" ng-click="closeMenu()">Photography</a></li>
 					<li><a href="#/show/video" ng-click="closeMenu()">Video</a></li>
 					<li><a href="#/contact" ng-click="closeMenu()">Contact</a></li>
 				</ul>
-			</div>
+			</nav>
 		</div>
-	</nav>
+	</header>
 	<section id="banner">
-	  <div class="container">
-	  	<div class="row">
-	  		<div class="col-xs-12">
-	  			<div class="banner-img-wrap">
-	  				<img src="images/home-banner.png" class="img-responsive" alt="Youth culture content creator - Since '92">
-	  			</div>
-	  		</div>
-	  	</div>
-	  </div>
+	  <h2><img src="images/home-banner.png" class="img-responsive" alt="Youth culture content creator - Since '92"></h2>
 	</section>
-	<div id="angular-view-target" ng-view autoscroll>
+	<section id="main" role="angular-view-target" ng-view autoscroll>
 		<!-- template loaded here -->
-	</div>
+	</section>
   <footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<nav>
-						<span class="copyright">&copy; 2014 Charles Stemen</span>
-						<!-- <span class="attribution">Dev: <a href="http://zacharylincoln.com">Zachary Lincoln</a></span> -->
-					</nav>
-				</div>
-			</div>
-		</div>
+		<p class="copyright">&copy; 2014 Charles Stemen</p>
+		<p class="attribution">Dev: <a href="http://burlingtoncollective.com">Burlington Collective</a></p>
 	</footer>
 	<!-- thirdparty -->
   <script type="text/javascript" src="js/thirdparty/jquery.1.11.0.min.js"></script>
