@@ -25,6 +25,9 @@
 	background: @black;
 	margin-bottom: 37px;
 	text-align: center;
+	h2{
+		margin: 0;
+	}
 	img{
 		margin: 0 auto;
 	}
@@ -36,8 +39,33 @@
 }
 
 #portfolio{
-	.project-tile{
+	article{
 		margin-bottom: 14px;
 		min-height: 202px;
+		.make-xs-column(12);
+		.make-sm-column(6);
+		.make-md-column(3);
+		p > a{
+			display: block;
+			text-decoration: none;
+			background: #fff;
+		}
+		h3{
+			font-size: 1em;
+			text-align: center;
+			margin: 0;
+			a{
+				text-decoration: none;
+			}
+		}
+		ul.tags{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li{
+				display: inline-block;
+				margin-right: 4px;
+			}
+		}
 	}
 }

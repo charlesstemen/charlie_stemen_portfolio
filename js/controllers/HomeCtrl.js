@@ -1,7 +1,12 @@
-controllers.controller('HomeCtrl', ['$scope', '$routeParams', 'ProjectService', function($scope, $routeParams, ProjectService){
+controllers.controller('HomeCtrl', ['$scope', '$routeParams', '$location', 'ProjectService', function($scope, $routeParams, $location, ProjectService){
+
+	$scope.filterApplied = $routeParams.category;
+	if($scope.filterApplied){
+		$scope.$root.$broadcast('FILTER_APPLIED', $routeParams.category);
+	}
 
 	$scope.categoryFilter = function(item){
-		if($routeParams.category){
+		if($scope.filterApplied){
 			var found = false;
 			$.each(item.categories, function(index, category){
 				if(category.slug == $routeParams.category){
@@ -14,6 +19,11 @@ controllers.controller('HomeCtrl', ['$scope', '$routeParams', 'ProjectService', 
 			//if no category selected, all pass filter
 			return true;
 		}
+	}
+
+	$scope.clearFilters = function(){
+		$location.path('/');
+		$scope.$root.$broadcast('ROUTE_CHANGE_X_MENU');
 	}
 
 	if(ProjectService.isInit()){

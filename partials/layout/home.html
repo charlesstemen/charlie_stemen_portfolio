@@ -1,9 +1,12 @@
 <section id="portfolio">
 	<div class="container">
+		<div class="clearfix" ng-show="filterApplied">
+			<p class="pull-right"><a href="javascript:void(0)" ng-click="clearFilters()">Clear Filters</a></p>
+		</div>
 		<div class="row">
-			<article class="col-xs-12 col-sm-6 col-md-3" ng-repeat="project in projects | filter: categoryFilter">
+			<article ng-repeat="project in projects | filter: categoryFilter">
 				<p><a ng-href="{{ '#/project/' + project.id }}"><img ng-src="{{ project.projectPath + project.mainImg }}" class="img-responsive" alt="{{ project.title }}"></a></p>
-				<h3>{{ project.title }}</h3>
+				<h3><a ng-href="{{ '#/project/' + project.id }}">{{ project.title }}</a></h3>
 			</article>
 		</div>
 	</div>

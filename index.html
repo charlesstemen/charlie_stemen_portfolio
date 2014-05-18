@@ -15,14 +15,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<h1><a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.png" alt="Charles Stemen"></a></h1>
+				<h1><a class="navbar-brand" href="javascript:void(0)" ng-click="clearFilters()"><img class="img-responsive" src="images/logo.png" alt="Charles Stemen"></a></h1>
 			</div>
-			<nav class="collapse navbar-collapse" id="main-nav" collapse="mobileMenuCollapsed">
+			<nav class="collapse navbar-collapse" id="main-nav" collapse="mobileMenuCollapsed" main-menu>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#/show/graphic-design" ng-click="closeMenu()">Graphic Design</a></li>
-					<li><a href="#/show/photography" ng-click="closeMenu()">Photography</a></li>
-					<li><a href="#/show/video" ng-click="closeMenu()">Video</a></li>
-					<li><a href="#/contact" ng-click="closeMenu()">Contact</a></li>
+					<li active-status category="graphic-design"><a href="#/show/graphic-design" ng-click="closeMenu()"><span>Graphic Design</span></a></li>
+					<li active-status category="photography"><a href="#/show/photography" ng-click="closeMenu()"><span>Photography</span></a></li>
+					<li active-status category="video"><a href="#/show/video" ng-click="closeMenu()"><span>Video</span></a></li>
+					<li><a href="#/contact" ng-click="closeMenu()"><span>Contact</span></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -55,6 +55,7 @@
   <!-- directives -->
   <script type="text/javascript" src="js/directives/image-slider.js"></script>
   <script type="text/javascript" src="js/directives/video-slider.js"></script>
+  <script type="text/javascript" src="js/directives/main-menu.js"></script>
 
   <script type="text/javascript">
   	$(function(){

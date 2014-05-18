@@ -11,7 +11,8 @@ app.run(['$rootScope', '$route', function($rootScope, $route){
 	$rootScope.$on('$routeChangeSuccess', function(){
 		$rootScope.mobileMenuCollapsed = true;
 		$rootScope.pageTitle = $route.current.pageTitle + ' | Charles Stemen';
-	})
+	});
+	
 	$rootScope.$on('$viewContentLoaded', function(){
 		setTimeout(function(){
 			$('.slide').fitVids();
@@ -91,7 +92,7 @@ app.config(['$routeProvider', function($routeProvider){
 	});
 }]);
 
-controllers.controller('MainCtrl', ['$scope', function($scope){
+controllers.controller('MainCtrl', ['$scope', '$location', function($scope, $location){
 
 	$scope.toggleCollapse = function(){
 		$scope.$root.mobileMenuCollapsed = !$scope.$root.mobileMenuCollapsed;
@@ -99,6 +100,11 @@ controllers.controller('MainCtrl', ['$scope', function($scope){
 
 	$scope.closeMenu = function(){
 		$scope.$root.mobileMenuCollapsed = true;
+	}
+
+	$scope.clearFilters = function(){
+		$location.path('/');
+		$scope.$root.$broadcast('ROUTE_CHANGE_X_MENU');
 	}
 }]);
 
