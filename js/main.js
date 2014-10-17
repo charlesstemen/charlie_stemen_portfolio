@@ -16,9 +16,9 @@ app.run(['$rootScope', '$route', function($rootScope, $route){
 	$rootScope.$on('$viewContentLoaded', function(){
 		setTimeout(function(){
 			$('.slide').fitVids();
-			$('.affix-container').affix({
-				top: 364
-			});
+			// $('.affix-container').affix({
+			// 	top: 364
+			// });
 			$('.affix-container').css({
 				width: function(){
 					return $(this).parent().width()+'px';
@@ -92,7 +92,14 @@ app.config(['$routeProvider', function($routeProvider){
 	});
 }]);
 
-controllers.controller('MainCtrl', ['$scope', '$location', function($scope, $location){
+controllers.controller('MainCtrl', ['$scope', '$location', '$modal', function($scope, $location, $modal){
+
+	$scope.launchVideo = function(){
+		var modalInstance = $modal.open({
+			templateUrl: 'partials/modals/aboutMeModal.html',
+			controller: 'AboutMeModalCtrl'
+		});
+	}
 
 	$scope.toggleCollapse = function(){
 		$scope.$root.mobileMenuCollapsed = !$scope.$root.mobileMenuCollapsed;
