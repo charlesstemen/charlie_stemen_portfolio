@@ -19,7 +19,10 @@ module.exports = function(grunt){
 			}
 		},
 		uglify: {
-			options: {},
+			options: {
+				sourceMap: true,
+				sourceMapRoot: 'http://localhost:8888/charlie_stemen_portfolio/'
+			},
 			build: {
 				files: {
 					'build/main.js' : [

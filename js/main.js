@@ -4,15 +4,15 @@ var controllers = angular.module('app.controllers', []);
 var services = angular.module('app.services', []);
 var directives = angular.module('app.directives', []);
 
-app.run(['$rootScope', '$route', function($rootScope, $route){
+app.run(['$rootScope', '$route', '$location', '$window', function($rootScope, $route, $location, $window){
 	$rootScope.pageTitle = 'Home | Charles Stemen';
 	$rootScope.mobileMenuCollapsed = true;
 
-	$rootScope.$on('$routeChangeSuccess', ['$location', '$window', function($location, $window){
+	$rootScope.$on('$routeChangeSuccess', function(){
 		$rootScope.mobileMenuCollapsed = true;
 		$rootScope.pageTitle = $route.current.pageTitle + ' | Charles Stemen';
 		$window.ga('send', 'pageview', { page: $location.path() });
-	}]);
+	});
 	
 	$rootScope.$on('$viewContentLoaded', function(){
 		setTimeout(function(){
