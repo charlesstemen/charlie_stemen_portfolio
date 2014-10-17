@@ -1,0 +1,4 @@
+<div class="slider">
+	<p ng-show="videos.length > 1"><a href="javascript:void(0)" ng-click="prev()">Previous</a> / <a href="javascript:void(0)" ng-click="next()">Next</a> {{'('+currentIndex+' out of '+videos.length+')'}}</p>
+	<div class="slide" ng-repeat="video in videoProxy" ng-show="videoProxy[$index].visible" ng-bind-html="video.embed"></div>
+</div>

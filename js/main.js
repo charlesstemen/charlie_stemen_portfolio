@@ -8,16 +8,18 @@ app.run(['$rootScope', '$route', function($rootScope, $route){
 	$rootScope.pageTitle = 'Home | Charles Stemen';
 	$rootScope.mobileMenuCollapsed = true;
 
-	$rootScope.$on('$routeChangeSuccess', function(){
+	$rootScope.$on('$routeChangeSuccess', ['$location', '$window', function($location, $window){
 		$rootScope.mobileMenuCollapsed = true;
 		$rootScope.pageTitle = $route.current.pageTitle + ' | Charles Stemen';
-	})
+		$window.ga('send', 'pageview', { page: $location.path() });
+	}]);
+	
 	$rootScope.$on('$viewContentLoaded', function(){
 		setTimeout(function(){
 			$('.slide').fitVids();
-			$('.affix-container').affix({
-				top: 364
-			});
+			// $('.affix-container').affix({
+			// 	top: 364
+			// });
 			$('.affix-container').css({
 				width: function(){
 					return $(this).parent().width()+'px';
@@ -91,7 +93,14 @@ app.config(['$routeProvider', function($routeProvider){
 	});
 }]);
 
-controllers.controller('MainCtrl', ['$scope', function($scope){
+controllers.controller('MainCtrl', ['$scope', '$location', '$modal', function($scope, $location, $modal){
+
+	$scope.launchVideo = function(){
+		var modalInstance = $modal.open({
+			templateUrl: 'partials/modals/aboutMeModal.html',
+			controller: 'AboutMeModalCtrl'
+		});
+	}
 
 	$scope.toggleCollapse = function(){
 		$scope.$root.mobileMenuCollapsed = !$scope.$root.mobileMenuCollapsed;
@@ -99,6 +108,11 @@ controllers.controller('MainCtrl', ['$scope', function($scope){
 
 	$scope.closeMenu = function(){
 		$scope.$root.mobileMenuCollapsed = true;
+	}
+
+	$scope.clearFilters = function(){
+		$location.path('/');
+		$scope.$root.$broadcast('ROUTE_CHANGE_X_MENU');
 	}
 }]);
 

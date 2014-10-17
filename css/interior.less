@@ -1,0 +1,40 @@
+#project-detail, #contact{
+	#complementary-content{
+		.make-xs-column(12);
+		.make-sm-column(6);
+		.make-sm-column-push(6);
+		.make-md-column(4);
+		.make-md-column-push(8);
+		.make-lg-column(4);
+		.make-lg-column-push(8);
+	}
+	#main-content{
+		.make-xs-column(12);
+		.make-sm-column(6);
+		.make-sm-column-pull(6);
+		.make-md-column(8);
+		.make-md-column-pull(4);
+		.make-lg-column(8);
+		.make-lg-column-pull(4);
+	}
+}
+
+#contact #main-content > div{
+	margin-bottom: 20px;
+}
+
+.affix-container{
+	h1,h2,h3,h4,h5{
+		margin-top: 0;
+	}
+	h1{
+		font-size: 28px;
+	}
+	@media(max-width: @screen-xs-max){
+		position: static !important;
+		width: auto !important;
+	}
+	&.affix{
+		top: 76px + 37px;
+	}
+}
