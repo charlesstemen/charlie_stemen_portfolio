@@ -8,10 +8,11 @@ app.run(['$rootScope', '$route', function($rootScope, $route){
 	$rootScope.pageTitle = 'Home | Charles Stemen';
 	$rootScope.mobileMenuCollapsed = true;
 
-	$rootScope.$on('$routeChangeSuccess', function(){
+	$rootScope.$on('$routeChangeSuccess', ['$location', '$window', function($location, $window){
 		$rootScope.mobileMenuCollapsed = true;
 		$rootScope.pageTitle = $route.current.pageTitle + ' | Charles Stemen';
-	});
+		$window.ga('send', 'pageview', { page: $location.path() });
+	}]);
 	
 	$rootScope.$on('$viewContentLoaded', function(){
 		setTimeout(function(){
