@@ -55,7 +55,7 @@
 	"id": 2,
 	"title": "Dais Visual Culture Mag",
 	"projectPath": "images/projects/dais/",
-	"mainImg": "thumbnail/dais.png",
+	"mainImg": "thumbnail/dais-thumbnail.jpg",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -529,6 +529,48 @@
 				"<iframe src='//player.vimeo.com/video/108219979' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 			],
 			"assets": []
+		}
+	]
+},
+{
+	"id": 18,
+	"title": "Lucci Rolling Paper Company",
+	"projectPath": "images/projects/lucci/",
+	"mainImg": "thumbnail/lucci-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>I was hired to brand and design packaging for Lucci, a rolling paper company offering the first ever \"inside-out\" papers.  Lucci is the \"professional way to roll\" and the logo and packaging represent the simplicity of th erolling technique.",
+	"sections": [
+		{
+			"title": "Logo",
+			"assets": [
+				"lucci-logo.jpg"
+			]
+		},
+		{
+			"title": "Packaging",
+			"assets": [
+				"box-wrapped-in-gold.jpg",
+				"box-set-up.jpg",
+				"box-side.jpg",
+				"the-original-inside-out-paper.jpg",
+				"booklet-exterior.jpg",
+				"booklet-macro.jpg",
+				"lighter-and-booklet.jpg",
+				"lucci-booklet-macro-exterior.jpg",
+				"designed-in-vermont.jpg"
+			]
+		},
+		{
+			"title": "Business Card",
+			"assets": [
+				"lucci-b-card-web-front.jpg",
+				"lucci-b-card-web.jpg"
+			]
 		}
 	]
 }]
