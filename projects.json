@@ -1,6 +1,6 @@
 [{
 	"id": 1,
-	"title": "HG 2015",
+	"title": "HG Skis",
 	"projectPath": "images/projects/hg-skis-2015/",
 	"mainImg": "thumbnail/hg-logo-marks.png",
 	"categories": [
@@ -16,13 +16,9 @@
 	"description": "<p>2015 rebrand for this craft ski company that embraces the surrounding youth 'park' skiing culture.  My design solutions focused on creating a connection between where the companies roots began, taking inspiration from everything for the Vermont state flag, to Sugarbush Resort.</p><ul class='plain'><li><a href='http://hgskis.com' target='_blank'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis' target='_blank'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis' target='_blank'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis' target='_blank'>instagram.com/hgskis</a></li></ul>",
 	"sections": [
 		{
-			"title": "Logo & Marks",
+			"title": "Logo",
 			"assets": [
-				"hg-logo-marks.jpg",
-				"hg-logo-marks2.jpg",
-				"hg-logo-marks3.jpg",
-				"hg-logo-marks4.jpg",
-				"hg-logo-marks5.jpg"
+				"hg-logo-marks.jpg"
 			]
 		},
 		{
@@ -32,29 +28,6 @@
 				"hg-catalog2.jpg",
 				"hg-catalog3.jpg",
 				"hg-catalog4.jpg"
-			]
-		},
-		{
-			"title": "Apparel Line",
-			"assets": [
-				"hg-apparel.jpg"
-			]
-		},
-		{
-			"title": "Tradeshow Print Materials",
-			"assets": [
-				"hg-print.jpg",
-				"hg-print2.jpg",
-				"hg-print4.jpg",
-				"hg-print5.jpg",
-				"hg-print3.jpg",
-				"hg-print6.jpg"
-			]
-		},
-		{
-			"title": "Icerider Wax Packaging",
-			"assets": [
-				"hg-wax.jpg"
 			]
 		},
 		{
@@ -68,7 +41,11 @@
 			"title": "Cinematography & Editing",
 			"vimeoEmbeds": [
 				"<iframe src='//player.vimeo.com/video/92535227?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-				"<iframe src='//player.vimeo.com/video/85191102?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+				"<iframe src='//player.vimeo.com/video/85191102?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+				"<iframe src='//player.vimeo.com/video/104386934?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+				"<iframe src='//player.vimeo.com/video/108219979?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+				"<iframe src='//player.vimeo.com/video/120467213?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+				"<iframe src='//player.vimeo.com/video/114123745?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 			],
 			"assets": []
 		}
@@ -83,10 +60,6 @@
 		{
 			"title": "Graphic Design",
 			"slug": "graphic-design"
-		},
-		{
-			"title": "Photography",
-			"slug": "photography"
 		}
 	],
 	"description": "<p>I work with a group of talented skiers, snowboarders, skaters, and artists that collectively identify under the crew name of DAIS. This is a shortened version of what the magazine would be.  The photography is the work of mine and others.</p>",
@@ -129,8 +102,7 @@
 		{
 			"title": "Print Materials",
 			"assets": [
-				"winter-garden-print.jpg",
-				"winter-garden-print2.jpg"
+				"winter-garden-print3.jpg"
 			]
 		},
 		{
@@ -144,7 +116,6 @@
 			"assets": [
 				"winter-garden-booklet.jpg",
 				"winter-garden-booklet2.jpg",
-				"winter-garden-booklet3.jpg",
 				"winter-garden-booklet4.jpg",
 				"winter-garden-booklet5.jpg",
 				"winter-garden-booklet6.jpg"
@@ -172,10 +143,6 @@
 		{
 			"title": "Graphic Design",
 			"slug": "graphic-design"
-		},
-		{
-			"title": "Photography",
-			"slug": "photography"
 		}
 	],
 	"description": "<p>Laced is aimed to apply branding to a typically unbranded item: shoelaces.  Hinting at youth culture, action sports, and drug culture. Laced as a project provided outlets for me to incorporate my skills in photography with my designs.</p>",
@@ -205,7 +172,7 @@
 },
 {
 	"id": 5,
-	"title": "Aurora",
+	"title": "Aurora Ski Film",
 	"projectPath": "images/projects/aurora/",
 	"mainImg": "thumbnail/connor-scopin-rail.png",
 	"categories": [
@@ -216,10 +183,6 @@
 		{
 			"title": "Video",
 			"slug": "video"
-		},
-		{
-			"title": "Photography",
-			"slug": "photography"
 		}
 	],
 	"description": "<p>Aurora is a film recapping the HG Skis team's 2013 season filming in the streets.  This 12 minute film was premiered in Burlington, VT, and Dever, CO in collaboration with Level 1 Production film, Partly Cloudy.</p>",
@@ -252,24 +215,17 @@
 			]
 		},
 		{
+			"title": "Trailer",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/70885416?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			]
+		},
+		{
 			"title": "Full Film",
 			"vimeoEmbeds": [
 				"<iframe src='//player.vimeo.com/video/76303360?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 			],
 			"assets": []
-		},
-		{
-			"title": "Photos",
-			"assets": [
-				"the-bowl-bw2.jpg",
-				"connor-skurting-ledge.jpg",
-				"connor-at-stratton-rail.jpg",
-				"connor-safety-grab.jpg",
-				"james-bowl.jpg",
-				"connor-above-tranny.jpg",
-				"connor-at-bridge.jpg",
-				"cole-and-connor-at-fence.jpg"
-			]
 		}
 	]
 },
@@ -340,33 +296,6 @@
 	]
 },
 {
-	"id": 9,
-	"title": "HG Skis Electronics",
-	"projectPath": "images/projects/hg-skis-electronics/",
-	"mainImg": "thumbnail/electronics12.png",
-	"categories": [
-		{
-			"title": "Graphic Design",
-			"slug": "graphic-design"
-		}
-	],
-	"description": "<p>Ski graphic produced for the 2013 run of the HG Skis Electronics park ski.</p>",
-	"sections": [
-		{
-			"title": "Graphic",
-			"assets": [
-				"electronics.jpg"
-			]
-		},
-		{
-			"title": "Product",
-			"assets": [
-				"electronics-air.jpg"
-			]
-		}
-	]
-},
-{
 	"id": 10,
 	"title": "Action",
 	"projectPath": "images/projects/action/",
@@ -393,13 +322,6 @@
 				"rorys-rail.jpg",
 				"nate-stemen-mini-ramp.jpg"
 			]
-		},
-		{
-			"title": "Cinematography & Editing",
-			"vimeoEmbeds": [
-				"<iframe src='//player.vimeo.com/video/91683093?color=ffffff' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-			],
-			"assets": []
 		}
 	]
 },
