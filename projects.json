@@ -478,4 +478,57 @@
 			]
 		}
 	]
+},
+{
+	"id": 17,
+	"title": "5 to 9 Ski Film",
+	"projectPath": "images/projects/5to9/",
+	"mainImg": "thumbnail/5to9.jpg",
+	"categories": [
+		{
+			"title": "Video",
+			"slug": "video"
+		}
+	],
+	"description": "<p><em>5 to 9</em> is a film recapping the HG Skis team's 2014 season filming in the streets of the east coast.  This 21 minute film was accepted into and premiered at the International Freeski Film Festival in Montreal, Canada.  It was later premiered in Burlington, Vermont before its online release.  The film was voted favorite film from the IF3 festival in a public poll on <a href='http://www.newschoolers.com' target='_blank'>newschoolers.com</a>, a popular freeskiing website.  I was the main cinematographer, editor, designer, and overall producer of the film.",
+	"sections": [
+		{
+			"title": "Logo and Titles",
+			"assets": [
+				"5to9.jpg",
+				"5to92.jpg",
+				"5to93.jpg",
+				"5to94.jpg",
+				"5to95.jpg",
+				"5to96.jpg"
+			]
+		},
+		{
+			"title": "Event Poster",
+			"assets": [
+				"5to914.jpg"
+			]
+		},
+		{
+			"title": "Pre Trailer Annoucement",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/121910433' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		},
+		{
+			"title": "Trailer",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/104386934' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		},
+		{
+			"title": "Full Film",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/108219979' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		}
+	]
 }]
