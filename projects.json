@@ -573,4 +573,35 @@
 			]
 		}
 	]
+},
+{
+	"id": 19,
+	"title": "Hickock and Boardman",
+	"projectPath": "images/projects/hbb/",
+	"mainImg": "thumbnail/hbb-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>I worked with Hickock and Boardman to design one-sheets that describe their services, as well as a folder to containe the one-sheets.  I used a clean type layout, and heavily implemented their brand colors.  We extended the branding style to create a postcard that was sent out as an invitation for their client appreciation night at Shelburne Farms.",
+	"sections": [
+		{
+			"title": "One-sheets",
+			"assets": [
+				"hbb-folder-front.jpg",
+				"hbb-folder-back.jpg",
+				"hbb-folder-open.jpg",
+				"hbb-folder-open-close.jpg",
+				"hbb-onesheets.jpg"
+			]
+		},
+		{
+			"title": "Post Cards",
+			"assets": [
+				"hbb-post-cards.jpg"
+			]
+		}
+	]
 }]
