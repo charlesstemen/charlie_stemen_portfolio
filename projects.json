@@ -604,4 +604,25 @@
 			]
 		}
 	]
+},
+{
+	"id": 20,
+	"title": "Logo & Marks",
+	"projectPath": "images/projects/logo-marks/",
+	"mainImg": "thumbnail/logo-thumb.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p></p>",
+	"sections": [
+		{
+			"title": "Logo & Marks",
+			"assets": [
+				"logo-marks.jpg"
+			]
+		}
+	]
 }]
