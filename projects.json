@@ -694,4 +694,27 @@
 			"assets": []
 		}
 	]
+},
+{
+	"id": 22,
+	"title": "City Market Illustration",
+	"projectPath": "images/projects/citymarket/",
+	"mainImg": "thumbnail/city-market-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>An illustration I did for City Market, a local co-op grocery store.  The illustration was screen printed on T Shirts that were sold in their Burlington, Vermont location.</p>",
+	"sections": [
+		{
+			"title": "Illustrations",
+			"assets": [
+				"t-shirt-folded.jpg",
+				"macro.jpg",
+				"t-shirt-folded2.jpg"
+			]
+		}
+	]
 }]
