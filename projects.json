@@ -93,35 +93,59 @@
 },
 {
 	"id": 2,
-	"title": "Dais Visual Culture Mag",
-	"projectPath": "images/projects/dais/",
-	"mainImg": "thumbnail/dais-thumbnail.jpg",
+	"title": "McIntyre Golf Company",
+	"projectPath": "images/projects/mcintyre-golf/",
+	"mainImg": "thumbnail/mcyintire-golf-12pack.png",
 	"categories": [
 		{
 			"title": "Graphic Design",
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>I work with a group of talented skiers, snowboarders, skaters, and artists that collectively identify under the crew name of DAIS. This is a shortened version of what the magazine would be.  The photography is the work of mine and others.</p>",
+	"description": "<p>Working with an upper level designer, and team of marketers at Brandthropology, I helped design the packaging for McIntyre's Golfballs.  I also photographed the packages.</p>",
 	"sections": [
 		{
-			"title": "Magazine Layout",
+			"title": "Package Design and Photography",
 			"assets": [
-				"dais.jpg",
-				"dais2.jpg",
-				"dais3.jpg",
-				"dais4.jpg",
-				"dais5.jpg",
-				"dais6.jpg",
-				"dais7.jpg",
-				"dais8.jpg",
-				"dais9.jpg"
+				"mcintyre-golf-12pack.jpg",
+				"the_rtj.jpg"
 			]
 		}
 	]
 },
 {
 	"id": 3,
+	"title": "Hickock and Boardman",
+	"projectPath": "images/projects/hbb/",
+	"mainImg": "thumbnail/hbb-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>I worked with Hickock and Boardman to design one-sheets that describe their services, as well as a folder to containe the one-sheets.  I used a clean type layout, and heavily implemented their brand colors.  We extended the branding style to create a postcard that was sent out as an invitation for their client appreciation night at Shelburne Farms.",
+	"sections": [
+		{
+			"title": "One-sheets",
+			"assets": [
+				"hbb-folder-front.jpg",
+				"hbb-folder-back.jpg",
+				"hbb-folder-open.jpg",
+				"hbb-folder-open-close.jpg",
+				"hbb-onesheets.jpg"
+			]
+		},
+		{
+			"title": "Post Cards",
+			"assets": [
+				"hbb-post-cards.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 4,
 	"title": "Winter Garden",
 	"projectPath": "images/projects/winter-garden/",
 	"mainImg": "thumbnail/winter-garden-thumbnail.jpg",
@@ -175,7 +199,130 @@
 	]
 },
 {
-	"id": 4,
+	"id": 5,
+	"title": "Lucci Rolling Paper Company",
+	"projectPath": "images/projects/lucci/",
+	"mainImg": "thumbnail/lucci-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>I was hired to brand and design packaging for Lucci, a rolling paper company offering the first ever \"inside-out\" papers.  Lucci is the \"professional way to roll\" and the logo and packaging represent the simplicity of th erolling technique.",
+	"sections": [
+		{
+			"title": "Logo",
+			"assets": [
+				"lucci-logo.jpg"
+			]
+		},
+		{
+			"title": "Packaging",
+			"assets": [
+				"box-wrapped-in-gold.jpg",
+				"box-set-up.jpg",
+				"box-side.jpg",
+				"the-original-inside-out-paper.jpg",
+				"booklet-exterior.jpg",
+				"booklet-macro.jpg",
+				"lighter-and-booklet.jpg",
+				"lucci-booklet-macro-exterior.jpg",
+				"designed-in-vermont.jpg"
+			]
+		},
+		{
+			"title": "Business Card",
+			"assets": [
+				"lucci-b-card-web-front.jpg",
+				"lucci-b-card-web.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 6,
+	"title": "City Market Illustration",
+	"projectPath": "images/projects/citymarket/",
+	"mainImg": "thumbnail/city-market-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>An illustration I did for City Market, a local co-op grocery store.  The illustration was screen printed on T Shirts that were sold in their Burlington, Vermont location.</p>",
+	"sections": [
+		{
+			"title": "Illustrations",
+			"assets": [
+				"t-shirt-folded.jpg",
+				"macro.jpg",
+				"t-shirt-folded2.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 7,
+	"title": "Northpull Winch Company",
+	"projectPath": "images/projects/northpull/",
+	"mainImg": "thumbnail/northpull-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>I worked with Northpull Winch Company and HG Skis to create both static and short video advertisements displaying the winches ability to tow skiers into urban features.  The ads were featured on Newschoolers.com.</p>",
+	"sections": [
+		{
+			"title": "Static Advertisements",
+			"assets": [
+				"northpull-ads.jpg",
+				"northpull-photo.jpg"
+			]
+		},
+		{
+			"title": "Video Advertisement",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/119557231' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		}
+	]
+},
+{
+	"id": 8,
+	"title": "Dais Visual Culture Mag",
+	"projectPath": "images/projects/dais/",
+	"mainImg": "thumbnail/dais-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>I work with a group of talented skiers, snowboarders, skaters, and artists that collectively identify under the crew name of DAIS. This is a shortened version of what the magazine would be.  The photography is the work of mine and others.</p>",
+	"sections": [
+		{
+			"title": "Magazine Layout",
+			"assets": [
+				"dais.jpg",
+				"dais2.jpg",
+				"dais3.jpg",
+				"dais4.jpg",
+				"dais5.jpg",
+				"dais6.jpg",
+				"dais7.jpg",
+				"dais8.jpg",
+				"dais9.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 9,
 	"title": "Laced Shoe Stringers",
 	"projectPath": "images/projects/laced/",
 	"mainImg": "thumbnail/laced-thumbnail_cropped.png",
@@ -211,7 +358,103 @@
 	]
 },
 {
-	"id": 5,
+	"id": 10,
+	"title": "Logo & Marks",
+	"projectPath": "images/projects/logo-marks/",
+	"mainImg": "thumbnail/logo-thumb.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p></p>",
+	"sections": [
+		{
+			"title": "Logo & Marks",
+			"assets": [
+				"logo-marks.jpg"
+			]
+		}
+	]
+},
+{
+	"id": 11,
+	"title": "Motion Reel",
+	"projectPath": "images/projects/motion-reel/",
+	"mainImg": "thumbnail/motion-reel-thumb.png",
+	"categories": [
+		{
+			"title": "Video",
+			"slug": "video"
+		}
+	],
+	"description": "<p>A collection of animations created for various clients and projects.</p>",
+	"sections": [
+		{
+			"title": "Animations",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/93394040' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		}
+	]
+},
+{
+	"id": 12,
+	"title": "5 to 9 Ski Film",
+	"projectPath": "images/projects/5to9/",
+	"mainImg": "thumbnail/5to9.jpg",
+	"categories": [
+		{
+			"title": "Video",
+			"slug": "video"
+		}
+	],
+	"description": "<p><em>5 to 9</em> is a film recapping the HG Skis team's 2014 season filming in the streets of the east coast.  This 21 minute film was accepted into and premiered at the International Freeski Film Festival in Montreal, Canada.  It was later premiered in Burlington, Vermont before its online release.  The film was voted favorite film from the IF3 festival in a public poll on <a href='http://www.newschoolers.com' target='_blank'>newschoolers.com</a>, a popular freeskiing website.  I was the main cinematographer, editor, designer, and overall producer of the film.",
+	"sections": [
+		{
+			"title": "Logo and Titles",
+			"assets": [
+				"5to9.jpg",
+				"5to92.jpg",
+				"5to93.jpg",
+				"5to94.jpg",
+				"5to95.jpg",
+				"5to96.jpg"
+			]
+		},
+		{
+			"title": "Event Poster",
+			"assets": [
+				"5to914.jpg"
+			]
+		},
+		{
+			"title": "Pre Trailer Annoucement",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/121910433' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		},
+		{
+			"title": "Trailer",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/104386934' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		},
+		{
+			"title": "Full Film",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/108219979' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		}
+	]
+},
+{
+	"id": 13,
 	"title": "Aurora Ski Film",
 	"projectPath": "images/projects/aurora/",
 	"mainImg": "thumbnail/connor-scopin-rail.png",
@@ -270,29 +513,7 @@
 	]
 },
 {
-	"id": 6,
-	"title": "McIntyre Golf Company",
-	"projectPath": "images/projects/mcintyre-golf/",
-	"mainImg": "thumbnail/mcyintire-golf-12pack.png",
-	"categories": [
-		{
-			"title": "Graphic Design",
-			"slug": "graphic-design"
-		}
-	],
-	"description": "<p>Working with an upper level designer, and team of marketers at Brandthropology, I helped design the packaging for McIntyre's Golfballs.  I also photographed the packages.</p>",
-	"sections": [
-		{
-			"title": "Package Design and Photography",
-			"assets": [
-				"mcintyre-golf-12pack.jpg",
-				"the_rtj.jpg"
-			]
-		}
-	]
-},
-{
-	"id": 7,
+	"id": 14,
 	"title": "Stray Travel",
 	"projectPath": "images/projects/stray-travel/",
 	"mainImg": "thumbnail/stray-travel_cropped.png",
@@ -314,7 +535,7 @@
 	]
 },
 {
-	"id": 8,
+	"id": 15,
 	"title": "Talking Graffiti w Ivan Miller",
 	"projectPath": "images/projects/talking-graffiti/",
 	"mainImg": "thumbnail/talking-graffiti_cropped.png",
@@ -350,7 +571,7 @@
 			"slug": "slug"
 		}
 	],
-	"description": "<p>A collection of action sport photography / cinematography.</p>",
+	"description": "<p>A collection of action, outdoor, portrait, and experimental photography.</p>",
 	"sections": [
 		{
 			"title": "Action",
@@ -418,227 +639,6 @@
 				"experimental/parking-garage-spiral.jpg",
 				"experimental/water-film-burn.jpg",
 				"experimental/playing-with-fire.jpg"
-			]
-		}
-	]
-},
-{
-	"id": 15,
-	"title": "Motion Reel",
-	"projectPath": "images/projects/motion-reel/",
-	"mainImg": "thumbnail/motion-reel-thumb.png",
-	"categories": [
-		{
-			"title": "Video",
-			"slug": "video"
-		}
-	],
-	"description": "<p>A collection of animations created for various clients and projects.</p>",
-	"sections": [
-		{
-			"title": "Animations",
-			"vimeoEmbeds": [
-				"<iframe src='//player.vimeo.com/video/93394040' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-			],
-			"assets": []
-		}
-	]
-},
-{
-	"id": 17,
-	"title": "5 to 9 Ski Film",
-	"projectPath": "images/projects/5to9/",
-	"mainImg": "thumbnail/5to9.jpg",
-	"categories": [
-		{
-			"title": "Video",
-			"slug": "video"
-		}
-	],
-	"description": "<p><em>5 to 9</em> is a film recapping the HG Skis team's 2014 season filming in the streets of the east coast.  This 21 minute film was accepted into and premiered at the International Freeski Film Festival in Montreal, Canada.  It was later premiered in Burlington, Vermont before its online release.  The film was voted favorite film from the IF3 festival in a public poll on <a href='http://www.newschoolers.com' target='_blank'>newschoolers.com</a>, a popular freeskiing website.  I was the main cinematographer, editor, designer, and overall producer of the film.",
-	"sections": [
-		{
-			"title": "Logo and Titles",
-			"assets": [
-				"5to9.jpg",
-				"5to92.jpg",
-				"5to93.jpg",
-				"5to94.jpg",
-				"5to95.jpg",
-				"5to96.jpg"
-			]
-		},
-		{
-			"title": "Event Poster",
-			"assets": [
-				"5to914.jpg"
-			]
-		},
-		{
-			"title": "Pre Trailer Annoucement",
-			"vimeoEmbeds": [
-				"<iframe src='//player.vimeo.com/video/121910433' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-			],
-			"assets": []
-		},
-		{
-			"title": "Trailer",
-			"vimeoEmbeds": [
-				"<iframe src='//player.vimeo.com/video/104386934' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-			],
-			"assets": []
-		},
-		{
-			"title": "Full Film",
-			"vimeoEmbeds": [
-				"<iframe src='//player.vimeo.com/video/108219979' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-			],
-			"assets": []
-		}
-	]
-},
-{
-	"id": 18,
-	"title": "Lucci Rolling Paper Company",
-	"projectPath": "images/projects/lucci/",
-	"mainImg": "thumbnail/lucci-thumbnail.jpg",
-	"categories": [
-		{
-			"title": "Graphic Design",
-			"slug": "graphic-design"
-		}
-	],
-	"description": "<p>I was hired to brand and design packaging for Lucci, a rolling paper company offering the first ever \"inside-out\" papers.  Lucci is the \"professional way to roll\" and the logo and packaging represent the simplicity of th erolling technique.",
-	"sections": [
-		{
-			"title": "Logo",
-			"assets": [
-				"lucci-logo.jpg"
-			]
-		},
-		{
-			"title": "Packaging",
-			"assets": [
-				"box-wrapped-in-gold.jpg",
-				"box-set-up.jpg",
-				"box-side.jpg",
-				"the-original-inside-out-paper.jpg",
-				"booklet-exterior.jpg",
-				"booklet-macro.jpg",
-				"lighter-and-booklet.jpg",
-				"lucci-booklet-macro-exterior.jpg",
-				"designed-in-vermont.jpg"
-			]
-		},
-		{
-			"title": "Business Card",
-			"assets": [
-				"lucci-b-card-web-front.jpg",
-				"lucci-b-card-web.jpg"
-			]
-		}
-	]
-},
-{
-	"id": 19,
-	"title": "Hickock and Boardman",
-	"projectPath": "images/projects/hbb/",
-	"mainImg": "thumbnail/hbb-thumbnail.jpg",
-	"categories": [
-		{
-			"title": "Graphic Design",
-			"slug": "graphic-design"
-		}
-	],
-	"description": "<p>I worked with Hickock and Boardman to design one-sheets that describe their services, as well as a folder to containe the one-sheets.  I used a clean type layout, and heavily implemented their brand colors.  We extended the branding style to create a postcard that was sent out as an invitation for their client appreciation night at Shelburne Farms.",
-	"sections": [
-		{
-			"title": "One-sheets",
-			"assets": [
-				"hbb-folder-front.jpg",
-				"hbb-folder-back.jpg",
-				"hbb-folder-open.jpg",
-				"hbb-folder-open-close.jpg",
-				"hbb-onesheets.jpg"
-			]
-		},
-		{
-			"title": "Post Cards",
-			"assets": [
-				"hbb-post-cards.jpg"
-			]
-		}
-	]
-},
-{
-	"id": 20,
-	"title": "Logo & Marks",
-	"projectPath": "images/projects/logo-marks/",
-	"mainImg": "thumbnail/logo-thumb.jpg",
-	"categories": [
-		{
-			"title": "Graphic Design",
-			"slug": "graphic-design"
-		}
-	],
-	"description": "<p></p>",
-	"sections": [
-		{
-			"title": "Logo & Marks",
-			"assets": [
-				"logo-marks.jpg"
-			]
-		}
-	]
-},
-{
-	"id": 21,
-	"title": "Northpull Winch Company",
-	"projectPath": "images/projects/northpull/",
-	"mainImg": "thumbnail/northpull-thumbnail.jpg",
-	"categories": [
-		{
-			"title": "Graphic Design",
-			"slug": "graphic-design"
-		}
-	],
-	"description": "<p>I worked with Northpull Winch Company and HG Skis to create both static and short video advertisements displaying the winches ability to tow skiers into urban features.  The ads were featured on Newschoolers.com.</p>",
-	"sections": [
-		{
-			"title": "Static Advertisements",
-			"assets": [
-				"northpull-ads.jpg",
-				"northpull-photo.jpg"
-			]
-		},
-		{
-			"title": "Video Advertisement",
-			"vimeoEmbeds": [
-				"<iframe src='//player.vimeo.com/video/119557231' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-			],
-			"assets": []
-		}
-	]
-},
-{
-	"id": 22,
-	"title": "City Market Illustration",
-	"projectPath": "images/projects/citymarket/",
-	"mainImg": "thumbnail/city-market-thumbnail.jpg",
-	"categories": [
-		{
-			"title": "Graphic Design",
-			"slug": "graphic-design"
-		}
-	],
-	"description": "<p>An illustration I did for City Market, a local co-op grocery store.  The illustration was screen printed on T Shirts that were sold in their Burlington, Vermont location.</p>",
-	"sections": [
-		{
-			"title": "Illustrations",
-			"assets": [
-				"t-shirt-folded.jpg",
-				"macro.jpg",
-				"t-shirt-folded2.jpg"
 			]
 		}
 	]
