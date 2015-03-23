@@ -2,7 +2,7 @@
 	"id": 1,
 	"title": "HG Skis",
 	"projectPath": "images/projects/hg-skis-2015/",
-	"mainImg": "thumbnail/hg-logo-marks.png",
+	"mainImg": "thumbnail/van-thumbnail.jpg",
 	"categories": [
 		{
 			"title": "Graphic Design",
@@ -31,10 +31,9 @@
 			]
 		},
 		{
-			"title": "Web Presence",
+			"title": "Website Design",
 			"assets": [
-				"hg-web.jpg",
-				"hg-web2.jpg"
+				"new-hg-website.jpg"
 			]
 		},
 		{
@@ -48,6 +47,47 @@
 				"<iframe src='//player.vimeo.com/video/114123745?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 			],
 			"assets": []
+		},
+		{
+			"title": "Van",
+			"assets": [
+				"van-for-web-btv.jpg",
+				"van-for-web-close-side-view.jpg",
+				"van-for-web.jpg"
+			]
+		},
+		{
+			"title": "Central Hoodie",
+			"assets": [
+				"both-hoodies.jpg",
+				"grey-tag.jpg",
+				"black-hoodie-close-up.jpg",
+				"mark.jpg"
+			]
+		},
+		{
+			"title": "Crest Crewneck",
+			"assets": [
+				"crest-crew-blue.jpg",
+				"deer.jpg",
+				"backhit.jpg"
+			]
+		},
+		{
+			"title": "Chief Coast Coaches Jacket",
+			"assets": [
+				"coaches-jacket.jpg",
+				"tag-close-up.jpg",
+				"coach-chest.jpg",
+				"coaches-wide.jpg"
+			]
+		},
+		{
+			"title": "Queen City Supply Tee",
+			"assets": [
+				"close-up-and-layout.jpg",
+				"mark.jpg"
+			]
 		}
 	]
 },
@@ -624,5 +664,5 @@
 				"logo-marks.jpg"
 			]
 		}
-	]
+	]	
 }]
