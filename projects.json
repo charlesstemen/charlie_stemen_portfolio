@@ -664,5 +664,34 @@
 				"logo-marks.jpg"
 			]
 		}
-	]	
+	]
+},
+{
+	"id": 21,
+	"title": "Northpull Winch Company",
+	"projectPath": "images/projects/northpull/",
+	"mainImg": "thumbnail/northpull-thumbnail.jpg",
+	"categories": [
+		{
+			"title": "Graphic Design",
+			"slug": "graphic-design"
+		}
+	],
+	"description": "<p>I worked with Northpull Winch Company and HG Skis to create both static and short video advertisements displaying the winches ability to tow skiers into urban features.  The ads were featured on Newschoolers.com.</p>",
+	"sections": [
+		{
+			"title": "Static Advertisements",
+			"assets": [
+				"northpull-ads.jpg",
+				"northpull-photo.jpg"
+			]
+		},
+		{
+			"title": "Video Advertisement",
+			"vimeoEmbeds": [
+				"<iframe src='//player.vimeo.com/video/119557231' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			],
+			"assets": []
+		}
+	]
 }]
