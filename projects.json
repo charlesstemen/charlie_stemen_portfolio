@@ -337,9 +337,9 @@
 },
 {
 	"id": 10,
-	"title": "Action",
-	"projectPath": "images/projects/action/",
-	"mainImg": "thumbnail/hunter-tyrrell-dfd.png",
+	"title": "Photography",
+	"projectPath": "images/projects/photography/",
+	"mainImg": "experimental/thumbnail/church-st-light-play.png",
 	"categories": [
 		{
 			"title": "Photography",
@@ -353,120 +353,71 @@
 	"description": "<p>A collection of action sport photography / cinematography.</p>",
 	"sections": [
 		{
-			"title": "Photos",
+			"title": "Action",
 			"assets": [
-				"hunter-dfd.jpg",
-				"james-amodeo-4-kink.jpg",
-				"cole-drop-rail.jpg",
-				"james-amodeo-down-rail.jpg",
-				"rorys-rail.jpg",
-				"nate-stemen-mini-ramp.jpg"
+				"action/hunter-dfd.jpg",
+				"action/james-amodeo-4-kink.jpg",
+				"action/cole-drop-rail.jpg",
+				"action/james-amodeo-down-rail.jpg",
+				"action/rorys-rail.jpg",
+				"action/nate-stemen-mini-ramp.jpg"
 			]
-		}
-	]
-},
-{
-	"id": 11,
-	"title": "Places",
-	"projectPath": "images/projects/places/",
-	"mainImg": "thumbnail/red-rocks-long-exposure.png",
-	"categories": [
+		},
 		{
-			"title": "Photography",
-			"slug": "photography"
-		}
-	],
-	"description": "<p>A collection of landscapes and scenes I've come across.</p>",
-	"sections": [
-		{
-			"title": "Photos",
+			"title": "Places",
 			"assets": [
-				"red-rocks-long-exposure.jpg",
-				"the-thaw.jpg",
-				"fiji-stump.jpg",
-				"mountain-reflection.jpg",
-				"stairs-into-water-night.jpg",
-				"wanaka-pano.jpg",
-				"the-jungle.jpg",
-				"winooski-long-exposure.jpg",
-				"tower-stars-long-exposure.jpg",
-				"poles.jpg",
-				"burlington-waterfront.jpg"
+				"places/red-rocks-long-exposure.jpg",
+				"places/the-thaw.jpg",
+				"places/fiji-stump.jpg",
+				"places/mountain-reflection.jpg",
+				"places/stairs-into-water-night.jpg",
+				"places/wanaka-pano.jpg",
+				"places/the-jungle.jpg",
+				"places/winooski-long-exposure.jpg",
+				"places/tower-stars-long-exposure.jpg",
+				"places/poles.jpg",
+				"places/burlington-waterfront.jpg"
 			]
-		}
-	]
-},
-{
-	"id": 12,
-	"title": "Portraits",
-	"projectPath": "images/projects/portraits/",
-	"mainImg": "thumbnail/luke-chillin-thumbnail.png",
-	"categories": [
+		},
 		{
-			"title": "Photography",
-			"slug": "photography"
-		}
-	],
-	"description": "<p>A collection of people in their environments.</p>",
-	"sections": [
-		{
-			"title": "Photos",
+			"title": "Portraits",
 			"assets": [
-				"connor-full-body.jpg",
-				"gags-slangin.jpg",
-				"play-to-win.jpg",
-				"luke-chillin-at-the-4-kink.jpg",
-				"jim-at-the-lake.jpg",
-				"haley-trippy-tree.jpg"
+				"portraits/connor-full-body.jpg",
+				"portraits/gags-slangin.jpg",
+				"portraits/play-to-win.jpg",
+				"portraits/luke-chillin-at-the-4-kink.jpg",
+				"portraits/jim-at-the-lake.jpg",
+				"portraits/haley-trippy-tree.jpg"
 			]
-		}
-	]
-},
-{
-	"id": 13,
-	"title": "Products",
-	"projectPath": "images/projects/products/",
-	"mainImg": "thumbnail/brandthro-bike.png",
-	"categories": [
+		},
 		{
-			"title": "Photography",
-			"slug": "photography"
-		}
-	],
-	"description": "<p>A collection of products in their environments.</p>",
-	"sections": [
-		{
-			"title": "Photos",
+			"title": "Products",
 			"assets": [
-				"mcintyre-12pack.jpg",
-				"hg-coaches-jacket.jpg",
-				"brandthro-bike.jpg",
-				"marlboro.jpg"
+				"products/mcintyre-12pack.jpg",
+				"products/hg-coaches-jacket.jpg",
+				"products/brandthro-bike.jpg",
+				"products/marlboro.jpg"
 			]
-		}
-	]
-},
-{
-	"id": 14,
-	"title": "Life",
-	"projectPath": "images/projects/life/",
-	"mainImg": "thumbnail/jim-at-the-lake-thumbnail.png",
-	"categories": [
+		},
 		{
-			"title": "Photography",
-			"slug": "photography"
-		}
-	],
-	"description": "<p>A collection of people exploring our surroundings.</p>",
-	"sections": [
-		{
-			"title": "Photos",
+			"title": "Life",
 			"assets": [
-				"climbing-glaciers.jpg",
-				"jim-at-the-lake.jpg",
-				"crew-in-the-desert.jpg",
-				"rainy-days.jpg",
-				"connor-at-trippy-tree.jpg"
+				"life/climbing-glaciers.jpg",
+				"life/jim-at-the-lake.jpg",
+				"life/crew-in-the-desert.jpg",
+				"life/rainy-days.jpg",
+				"life/connor-at-trippy-tree.jpg"
+			]
+		},
+		{
+			"title": "Experimental",
+			"assets": [
+				"experimental/church-st-light-play.jpg",
+				"experimental/curved-building.jpg",
+				"experimental/square-film-scratched.jpg",
+				"experimental/parking-garage-spiral.jpg",
+				"experimental/water-film-burn.jpg",
+				"experimental/playing-with-fire.jpg"
 			]
 		}
 	]
@@ -490,32 +441,6 @@
 				"<iframe src='//player.vimeo.com/video/93394040' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 			],
 			"assets": []
-		}
-	]
-},
-{
-	"id": 16,
-	"title": "Experimental",
-	"projectPath": "images/projects/experimental/",
-	"mainImg": "thumbnail/church-st-light-play.png",
-	"categories": [
-		{
-			"title": "Photography",
-			"slug": "photography"
-		}
-	],
-	"description": "<p>A collection of abstract experiments with photography.</p>",
-	"sections": [
-		{
-			"title": "Photos",
-			"assets": [
-				"church-st-light-play.jpg",
-				"curved-building.jpg",
-				"square-film-scratched.jpg",
-				"parking-garage-spiral.jpg",
-				"water-film-burn.jpg",
-				"playing-with-fire.jpg"
-			]
 		}
 	]
 },
