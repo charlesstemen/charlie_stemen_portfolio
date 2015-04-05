@@ -13,7 +13,7 @@
 			"slug": "video"
 		}
 	],
-	"description": "<p>2015 rebrand for this craft ski company that embraces the surrounding youth 'park' skiing culture.  My design solutions focused on creating a connection between where the companies roots began, taking inspiration from everything for the Vermont state flag, to Sugarbush Resort.</p><ul class='plain'><li><a href='http://hgskis.com' target='_blank'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis' target='_blank'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis' target='_blank'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis' target='_blank'>instagram.com/hgskis</a></li></ul>",
+	"description": "<p>I have worked with HG Skis since 2012. I started as a video intern and am now the creative director of the company, self-producing a majority of their media and artwork. I lead a rebrand of the company that was fully launched by the 2014/15 season, while producing our full length urban ski film that was accepted to the International Freeski Film Festival. Since I have come on board, HG Skis has grown from a local favorite, to one of the up and coming craft ski brands of North America. Visit HG’s website and social media pages to view more:</p><ul class='plain'><li><a href='http://hgskis.com' target='_blank'>hgskis.com</a></li><li><a href='http://vimeo.com/hgskis' target='_blank'>vimeo.com/hgskis</a></li><li><a href='http://facebook.com/hgskis' target='_blank'>facebook.com/hgskis</a></li><li><a href='http://instagram.com/hgskis' target='_blank'>instagram.com/hgskis</a></li></ul>",
 	"sections": [
 		{
 			"title": "Logo",
@@ -37,12 +37,10 @@
 			]
 		},
 		{
-			"title": "Cinematography & Editing",
+			"title": "Park Edits",
 			"vimeoEmbeds": [
 				"<iframe src='//player.vimeo.com/video/92535227?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 				"<iframe src='//player.vimeo.com/video/85191102?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-				"<iframe src='//player.vimeo.com/video/104386934?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-				"<iframe src='//player.vimeo.com/video/108219979?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 				"<iframe src='//player.vimeo.com/video/120467213?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 				"<iframe src='//player.vimeo.com/video/114123745?title=0&amp;byline=0&amp;portrait=0' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 			],
@@ -57,7 +55,7 @@
 			]
 		},
 		{
-			"title": "Central Hoodie",
+			"title": "Apparel",
 			"assets": [
 				"both-hoodies.jpg",
 				"grey-tag.jpg",
@@ -102,20 +100,21 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>Working with an upper level designer, and team of marketers at Brandthropology, I helped design the packaging for McIntyre's Golfballs.  I also photographed the packages.</p>",
+	"description": "<p>Working with an upper level designer, and team of marketers at Brandthropology, I helped design the packaging for McIntyre's vintage replica golf balls. The packaging was applied over six varieties of balls, and three sizes. I was responsible for the photography of the 12-ball gift box and 3-ball sleeve packages.</p>",
 	"sections": [
 		{
 			"title": "Package Design and Photography",
 			"assets": [
 				"mcintyre-golf-12pack.jpg",
-				"the_rtj.jpg"
+				"the_rtj.jpg",
+				"1-ball.jpg"
 			]
 		}
 	]
 },
 {
 	"id": 3,
-	"title": "Hickock and Boardman",
+	"title": "Hickock & Boardman",
 	"projectPath": "images/projects/hbb/",
 	"mainImg": "thumbnail/hbb-thumbnail.jpg",
 	"categories": [
@@ -124,7 +123,7 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>I worked with Hickock and Boardman to design one-sheets that describe their services, as well as a folder to containe the one-sheets.  I used a clean type layout, and heavily implemented their brand colors.  We extended the branding style to create a postcard that was sent out as an invitation for their client appreciation night at Shelburne Farms.",
+	"description": "<p>I worked with Hickock & Boardman to design one-sheets that describe their resources to customers, as well as a branded folder to contain them. Using their established brand guidelines, I created a clean, hierarchy minded layout, that heavily implemented their colors to draw attention and build originality. We extended this new branding style to a postcard that was used as an invitation to their client appreciation night at Shelburne Farms.</p>",
 	"sections": [
 		{
 			"title": "One-sheets",
@@ -155,7 +154,7 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>Winter Garden is the result of a semester long thesis project comparing freestyle skiing &amp; snowboarding to more publicly accepted sports like skateboarding.  The mission of Winter Garden is to identify the need for an outlet in cities and town for park skiing and riding.  This would be done through incorporating public art into skatepark style, publicly available features.  The handmade process book covered all parts of the project from idea development to final outcomes.  The poster and post cards would act as public invitations to the opening event at a location in Burlington.  The booklet would act as a means of proposing the project to a city with the aim of raising funding.</p>",
+	"description": "<p>Winter Garden is the result of a semester long thesis project comparing freestyle skiing & snowboarding to more publicly accepted sports like skateboarding. The mission of Winter Garden is to identify the need for an outlet within cities and towns for park skiing and riding. The final result would be done through the combination of public art pieces and park style features, publicly available in the same way a skatepark typically is. This would eliminate the need to take down the park in off season months.</p><p>The poster is a public invitation to the opening event at a hypothetical location in Burlington, Vermont. The booklet would act as a means of proposing the project to a new city with the aim of raising funding. The handmade process book covered all parts of the project from idea development and sketching, to final outcomes.</p>",
 	"sections": [
 		{
 			"title": "Logo",
@@ -166,7 +165,7 @@
 		{
 			"title": "Print Materials",
 			"assets": [
-				"winter-garden-print3.jpg"
+				"winter-garden-poster.jpg"
 			]
 		},
 		{
@@ -200,7 +199,7 @@
 },
 {
 	"id": 5,
-	"title": "Lucci Rolling Paper Company",
+	"title": "Lucci",
 	"projectPath": "images/projects/lucci/",
 	"mainImg": "thumbnail/lucci-thumbnail.jpg",
 	"categories": [
@@ -209,7 +208,7 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>I was hired to brand and design packaging for Lucci, a rolling paper company offering the first ever \"inside-out\" papers.  Lucci is the \"professional way to roll\" and the logo and packaging represent the simplicity of th erolling technique.",
+	"description": "<p>I was hired to both brand and design packaging for Lucci, a rolling paper company offering the first ever \"inside-out\" paper. Lucci, the \"professional way to roll\", represents the simplicity of the inside out rolling technique, and its branding is equally modest.",
 	"sections": [
 		{
 			"title": "Logo",
@@ -251,14 +250,15 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>An illustration I did for City Market, a local co-op grocery store.  The illustration was screen printed on T Shirts that were sold in their Burlington, Vermont location.</p>",
+	"description": "<p>An illustration for City Market, a co-op grocery store located in Burlington, Vermont. The artwork was screen printed on T Shirts that were sold in their store.</p>",
 	"sections": [
 		{
-			"title": "Illustrations",
+			"title": "Illustration",
 			"assets": [
 				"t-shirt-folded.jpg",
 				"macro.jpg",
-				"t-shirt-folded2.jpg"
+				"t-shirt-folded2.jpg",
+				"city-market-sketch.jpg"
 			]
 		}
 	]
@@ -277,7 +277,7 @@
 	"description": "<p>I worked with Northpull Winch Company and HG Skis to create both static and short video advertisements displaying the winches ability to tow skiers into urban features.  The ads were featured on Newschoolers.com.</p>",
 	"sections": [
 		{
-			"title": "Static Advertisements",
+			"title": "Static Ads & Photography",
 			"assets": [
 				"northpull-ads.jpg",
 				"northpull-photo.jpg"
@@ -303,7 +303,7 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>I work with a group of talented skiers, snowboarders, skaters, and artists that collectively identify under the crew name of DAIS. This is a shortened version of what the magazine would be.  The photography is the work of mine and others.</p>",
+	"description": "<p>Dais magazine is a concept mag created with the intent of featuring talented skiers, snowboarders, skaters, artists and the unusual cultures created by these folk. the term dais comes from its definition of being a raised platform, such as one used by a speaker. The magazine would be a dais for visually displaying the abstract culture of action sports and artists. The photography in this concept is the work of mine and others.</p>",
 	"sections": [
 		{
 			"title": "Magazine Layout",
@@ -332,7 +332,7 @@
 			"slug": "graphic-design"
 		}
 	],
-	"description": "<p>Laced is aimed to apply branding to a typically unbranded item: shoelaces.  Hinting at youth culture, action sports, and drug culture. Laced as a project provided outlets for me to incorporate my skills in photography with my designs.</p>",
+	"description": "<p>Laced is aimed to apply branding to a typically unbranded item: shoelaces. Hinting at youth culture, and action sports, Laced as a project provided outlets for me to incorporate my skills in photography with my designs.</p>",
 	"sections": [
 		{
 			"title": "Logo",
@@ -343,7 +343,7 @@
 		{
 			"title": "Print Materials",
 			"assets": [
-				"laced-print.jpg",
+				"laced-poster-final.jpg",
 				"laced-print2.jpg"
 			]
 		},
@@ -351,15 +351,14 @@
 			"title": "Packaging",
 			"assets": [
 				"laced-package.jpg",
-				"laced-package2.jpg",
-				"laced-package3.jpg"
+				"laced-package2.jpg"
 			]
 		}
 	]
 },
 {
 	"id": 10,
-	"title": "Logo & Marks",
+	"title": "Logos & Marks",
 	"projectPath": "images/projects/logo-marks/",
 	"mainImg": "thumbnail/logo-thumb.jpg",
 	"categories": [
@@ -371,7 +370,7 @@
 	"description": "<p></p>",
 	"sections": [
 		{
-			"title": "Logo & Marks",
+			"title": "Logos & Marks",
 			"assets": [
 				"logo-marks.jpg"
 			]
@@ -523,7 +522,7 @@
 			"slug": "video"
 		}
 	],
-	"description": "<p>A short video I made for Stray Travel in New Zealand while on my semester abroad there in the summer/fall of 2012 (their winter).  Video was filmed in a little over a week of traveling down the west coast of the south island.  Aotearoa is quite a magical place.</p>",
+	"description": "<p>A short promotional video I made for Stray Travel New Zealand showcasing a passengers experience on their bus tours. The video was filmed over a week of traveling down the west coast of the south island.</p>",
 	"sections": [
 		{
 			"title": "Cinematography & Editing",
@@ -536,7 +535,7 @@
 },
 {
 	"id": 15,
-	"title": "Talking Graffiti w Ivan Miller",
+	"title": "Artist Profile: Castle",
 	"projectPath": "images/projects/talking-graffiti/",
 	"mainImg": "thumbnail/talking-graffiti_cropped.png",
 	"categories": [
@@ -557,7 +556,7 @@
 	]
 },
 {
-	"id": 10,
+	"id": 16,
 	"title": "Photography",
 	"projectPath": "images/projects/photography/",
 	"mainImg": "experimental/thumbnail/church-st-light-play.png",
@@ -571,17 +570,19 @@
 			"slug": "slug"
 		}
 	],
-	"description": "<p>A collection of action, outdoor, portrait, and experimental photography.</p>",
+	"description": "<p>A collection of action, outdoor, product, and experimental photography.</p>",
 	"sections": [
 		{
 			"title": "Action",
 			"assets": [
-				"action/hunter-dfd.jpg",
-				"action/james-amodeo-4-kink.jpg",
+				"action/nate-stemen-mini-ramp.jpg",
+				"action/hunter-dfd.jpg",				
+				"action/jim-and-connors-big-duet.jpg",
 				"action/cole-drop-rail.jpg",
-				"action/james-amodeo-down-rail.jpg",
-				"action/rorys-rail.jpg",
-				"action/nate-stemen-mini-ramp.jpg"
+				"action/cole35mm.jpg",
+				"action/james-amodeo-4-kink.jpg",
+				"action/cole-shifty-180.jpg",
+				"action/james-amodeo-down-rail.jpg"
 			]
 		},
 		{
@@ -593,52 +594,36 @@
 				"places/mountain-reflection.jpg",
 				"places/stairs-into-water-night.jpg",
 				"places/wanaka-pano.jpg",
-				"places/the-jungle.jpg",
 				"places/winooski-long-exposure.jpg",
-				"places/tower-stars-long-exposure.jpg",
-				"places/poles.jpg",
-				"places/burlington-waterfront.jpg"
-			]
-		},
-		{
-			"title": "Portraits",
-			"assets": [
-				"portraits/connor-full-body.jpg",
-				"portraits/gags-slangin.jpg",
-				"portraits/play-to-win.jpg",
-				"portraits/luke-chillin-at-the-4-kink.jpg",
-				"portraits/jim-at-the-lake.jpg",
-				"portraits/haley-trippy-tree.jpg"
+				"places/bc-river.jpg",
+				"places/nateadksweb.jpg",
+				"places/maine-stars.jpg",
+				"places/poles.jpg"
 			]
 		},
 		{
 			"title": "Products",
 			"assets": [
 				"products/mcintyre-12pack.jpg",
-				"products/hg-coaches-jacket.jpg",
+				"products/hemetic.jpg",
+				"products/hemetic-lake-sarah.jpg",
 				"products/brandthro-bike.jpg",
+				"products/box-set-up.jpg",
+				"products/lighter-and-booklet.jpg",
+				"products/hg-coaches-jacket.jpg",
 				"products/marlboro.jpg"
-			]
-		},
-		{
-			"title": "Life",
-			"assets": [
-				"life/climbing-glaciers.jpg",
-				"life/jim-at-the-lake.jpg",
-				"life/crew-in-the-desert.jpg",
-				"life/rainy-days.jpg",
-				"life/connor-at-trippy-tree.jpg"
 			]
 		},
 		{
 			"title": "Experimental",
 			"assets": [
 				"experimental/church-st-light-play.jpg",
-				"experimental/curved-building.jpg",
-				"experimental/square-film-scratched.jpg",
-				"experimental/parking-garage-spiral.jpg",
+				"experimental/play-to-win.jpg",
 				"experimental/water-film-burn.jpg",
-				"experimental/playing-with-fire.jpg"
+				"experimental/lines-and-clouds-yo.jpg",
+				"experimental/abstract1.jpg",
+				"experimental/abstract2.jpg",
+				"experimental/abstract3.jpg"
 			]
 		}
 	]
