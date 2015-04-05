@@ -5,12 +5,10 @@ var services = angular.module('app.services', []);
 var directives = angular.module('app.directives', []);
 
 app.run(['$rootScope', '$route', '$location', '$window', function($rootScope, $route, $location, $window){
-	$rootScope.pageTitle = 'Home | Charles Stemen';
 	$rootScope.mobileMenuCollapsed = true;
 
 	$rootScope.$on('$routeChangeSuccess', function(){
 		$rootScope.mobileMenuCollapsed = true;
-		$rootScope.pageTitle = $route.current.pageTitle + ' | Charles Stemen';
 		$window.ga('send', 'pageview', { page: $location.path() });
 	});
 	
