@@ -60,31 +60,21 @@
 				"both-hoodies.jpg",
 				"grey-tag.jpg",
 				"black-hoodie-close-up.jpg",
-				"mark.jpg"
-			]
-		},
-		{
-			"title": "Crest Crewneck",
-			"assets": [
+				"mark.jpg",
 				"crest-crew-blue.jpg",
 				"deer.jpg",
-				"backhit.jpg"
-			]
-		},
-		{
-			"title": "Chief Coast Coaches Jacket",
-			"assets": [
-				"coaches-jacket.jpg",
+				"backhit.jpg",
+				"coaches-jacket-new.jpg",
 				"tag-close-up.jpg",
 				"coach-chest.jpg",
-				"coaches-wide.jpg"
+				"coaches-wide.jpg",
+				"close-up-and-layout.jpg"
 			]
 		},
 		{
-			"title": "Queen City Supply Tee",
+			"title": "2016 Ski Graphics (Design & Art Direction)",
 			"assets": [
-				"close-up-and-layout.jpg",
-				"mark.jpg"
+				"2016-mocked-up.jpg"
 			]
 		}
 	]
@@ -234,7 +224,7 @@
 			"title": "Business Card",
 			"assets": [
 				"lucci-b-card-web-front.jpg",
-				"lucci-b-card-web.jpg"
+				"lucci-b-card-web-back.jpg"
 			]
 		}
 	]
