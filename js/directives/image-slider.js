@@ -1,4 +1,4 @@
-directives.directive('imageSlider', function(){
+directives.directive('imageSlider', ['$modal', function($modal){
 	return {
 		restrict: 'A',
 		replace: true,
@@ -40,6 +40,18 @@ directives.directive('imageSlider', function(){
 				});
 			}
 
+			scope.openModal = function (photo) {
+				var modalInstance = $modal.open({
+					templateUrl: 'partials/modals/photo-detail-modal.html',
+					controller: 'PhotoDetailModalCtrl',
+					resolve: {
+						photo: [function () {
+							return photo;
+						}]
+					}
+				});
+			}
+
 		}
 	}
-})
+}]);

@@ -43,7 +43,8 @@ module.exports = function(grunt){
 					'partials/layout/detail.html' : 'src/partials/layout/detail.html',
 					'partials/layout/error.html' : 'src/partials/layout/error.html',
 					'partials/layout/home.html' : 'src/partials/layout/home.html',
-					'partials/modals/aboutMeModal.html' : 'src/partials/modals/aboutMeModal.html'
+					'partials/modals/aboutMeModal.html' : 'src/partials/modals/aboutMeModal.html',
+					'partials/modals/photo-detail-modal.html' : 'src/partials/modals/photo-detail-modal.html'
 				}
 			}
 		},
@@ -60,6 +61,7 @@ module.exports = function(grunt){
 						'js/controllers/ErrorCtrl.js',
 						'js/controllers/HomeCtrl.js',
 						'js/controllers/modal-controllers/AboutMeModalCtrl.js',
+						'js/controllers/modal-controllers/PhotoDetailModalCtrl.js',
 						'js/directives/image-slider.js',
 						'js/directives/main-menu.js',
 						'js/directives/project-description.js',
