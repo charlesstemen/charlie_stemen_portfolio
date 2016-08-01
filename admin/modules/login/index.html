@@ -1,0 +1,26 @@
+<section id="login">
+    <div class="container">
+        <div class="page-header">
+            <h1>Welcome Charlie</h1>
+            <p class="lead">Log in to continue to your site's dashboard.</p>
+        </div>
+        <div class="panel panel-default">
+            <form class="form" name="form" ng-submit="login" novalidate>
+                <div class="panel-body">
+                    <div form-message></div>
+                    <div class="form-group" ng-class="{'has-error': (form.email.$invalid && form.email.$dirty) || (form.$submitted && form.email.$error.required)}">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="name@something.com" name="email" ng-model="user.email" required>
+                    </div>
+                    <div class="form-group" ng-class="{'has-error': (form.password.$invalid && form.password.$dirty) || (form.$submitted && form.password.$error.required)}">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="secret" name="password" ng-model="user.password" required>
+                    </div>
+                </div>
+                <div class="panel-footer clearfix">
+                    <button type="submit" class="btn btn-primary pull-right">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

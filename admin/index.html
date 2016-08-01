@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="cms">
+<head>
+    <title>Charles Stemen's CMS</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+    <nav top-nav></nav>
+    <div ng-view></div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+    <script src="modules/login/ctrl.js"></script>
+    <script src="modules/dashboard/ctrl.js"></script>
+</body>
+</html>
