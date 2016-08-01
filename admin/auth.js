@@ -7,13 +7,16 @@ services.factory('CMSAuth', ['$q', '$location', '$rootScope', function ($q, $loc
 
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
+      console.log('hey');
       init.resolve(user);
-      $location.path('/dashboard');
+      $location.path('/dashboard').replace();
       $rootScope.$broadcast('auth.signedIn');
+      $rootScope.$apply();
     } else {
       init.reject('auth.error');
-      $location.path('/');
+      $location.path('/').replace();
       $rootScope.$broadcast('auth.signedOut');
+      $rootScope.$apply();
     }
   });
 
@@ -39,6 +42,10 @@ services.factory('CMSAuth', ['$q', '$location', '$rootScope', function ($q, $loc
           reject(error);
         });
     });
+  }
+
+  CMSAuth.prototype.signOut = function () {
+    firebase.auth().signOut();
   }
 
   return CMSAuth;
