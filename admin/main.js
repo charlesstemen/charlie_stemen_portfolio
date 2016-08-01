@@ -1,7 +1,8 @@
-var app = angular.module('cms', ['ngRoute', 'app.controllers', 'app.services']);
+var app = angular.module('cms', ['ngRoute', 'app.controllers', 'app.services', 'app.directives']);
 
 var controllers = angular.module('app.controllers', []);
 var services = angular.module('app.services', []);
+var directives = angular.module('app.directives', []);
 
 app.run(['$rootScope', '$location', function ($rootScope, $location) {
   var config = {

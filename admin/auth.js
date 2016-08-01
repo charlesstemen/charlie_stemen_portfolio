@@ -1,27 +1,33 @@
-services.factory('CMSAuth', ['$q', '$location', function ($q, $location) {
+services.factory('CMSAuth', ['$q', '$location', '$rootScope', function ($q, $location, $rootScope) {
+  var init = $q.defer();
+
   function CMSAuth () {
     return this;
   }
 
   firebase.auth().onAuthStateChanged(function (user) {
-    console.log('checking');
-    console.log(user);
     if (user) {
+      init.resolve(user);
       $location.path('/dashboard');
+      $rootScope.$broadcast('auth.signedIn');
     } else {
+      init.reject('auth.error');
       $location.path('/');
+      $rootScope.$broadcast('auth.signedOut');
     }
   });
 
 
   CMSAuth.prototype.requireAuth = function () {
-    return $q(function (resolve, reject) {
-      if (firebase.auth().currentUser) {
-        resolve(firebase.auth().currentUser);
-      } else {
-        reject('auth.error');
-      }
-    });
+    var deferred = $q.defer();
+
+    if (init.promise.$$state.status === 0) {
+      return init.promise;
+    } else if (firebase.auth().currentUser) {
+      deferred.resolve(firebase.auth().currentUser);
+    } else {
+      deferred.reject('auth.error');
+    }
   }
 
   CMSAuth.prototype.signIn = function (email, password) {
