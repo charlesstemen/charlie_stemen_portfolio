@@ -39,4 +39,22 @@ app.config(['$routeProvider', function ($routeProvider) {
         }]
       }
     })
+    .when('/project/new', {
+      templateUrl: 'modules/project/index.html',
+      controller: 'ProjectCtrl',
+      resolve: {
+        'currentAuth': ['CMSAuth', function (CMSAuth) {
+          return new CMSAuth().requireAuth();
+        }]
+      }
+    })
+    .when('/project/id/:fbKey', {
+      templateUrl: 'modules/project/index.html',
+      controller: 'ProjectCtrl',
+      resolve: {
+        'currentAuth': ['CMSAuth', function (CMSAuth) {
+          return new CMSAuth().requireAuth();
+        }]
+      }
+    })
 }])

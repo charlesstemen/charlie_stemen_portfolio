@@ -1,1 +1,26 @@
-<p>hello world</p>
+<main id="dashboard">
+    <div class="container">
+        <div class="page-header">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <section class="model">
+                    <h1>Projects <a href="#/project/new" class="btn btn-link">+ add</a></h1>
+                    <ul class="nav nav-stacked">
+                        <li ng-repeat="project in projects"><a ng-href="#/project/edit/{{ project.$id }}">{{ project.name }}</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-xs-6">
+                <section class="model">
+                    <h1>Categories <a href="#/category/new" class="btn btn-link">+ add</a></h1>
+                    <ul class="nav nav-stacked">
+                        <li ng-repeat="category in categories"><a ng-href="#/category/edit/{{ category.$id }}">{{ category.name }}</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>

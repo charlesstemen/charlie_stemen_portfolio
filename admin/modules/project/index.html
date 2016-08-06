@@ -1,0 +1,67 @@
+<section id="project" class="detail">
+    <form class="form" name="projectForm" ng-submit="submit()" novalidate>
+        <div class="container">
+            <div class="page-header">
+                <h1>{{ title }}</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div form-message></div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="form-group" ng-class="{'has-error': (projectForm.name.$invalid && projectForm.name.$dirty) || (projectForm.$submitted && projectForm.name.$error.required)}">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" ng-model="project.name" required>
+                    </div>
+                    <div class="form-group" ng-class="{'has-error': (projectForm.description.$invalid && projectForm.description.$dirty)}">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="5" name="description" ng-model="project.description"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="featured" ng-model="project.featured"> Featured?
+                        </label>
+                    </div>
+                    <!--<div class="form-group" ng-class="{'has-error': (projectForm.category.$invalid && projectForm.category.$dirty) || (projectForm.$submitted && projectForm.category.$error.required)}">-->
+                        <!--<label>Category</label>-->
+                        <!--<select class="form-control" name="category" ng-model="project.category" ng-options="cat.$id as cat.name for cat in categories" required>-->
+                            <!--<option value="">&#45;&#45; please select a category &#45;&#45;</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="form-group" ng-class="{'has-error': (projectForm.coverImg.$invalid && projectForm.coverImg.$dirty) || (projectForm.$submitted && projectForm.coverImg.$error.required)}">-->
+                        <!--<label>Cover Image</label>-->
+                        <!--<input type="url" class="form-control" name="coverImg" ng-model="project.coverImg" required>-->
+                    <!--</div>-->
+                    <div class="form-group">
+                        <label>Images</label>
+                        <p ng-show="!project.images.length">No images added</p>
+                        <div class="input-group" ng-repeat="img in project.images">
+                            <input type="url" class="form-control" name="image[]" ng-model="img">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-danger" ng-click="deleteImage($index)">Delete</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" ng-class="{'has-error': projectForm.newImg.$error.url && projectForm.newImg.$dirty}">
+                        <div class="input-group">
+                            <input type="url" class="form-control" name="newImg" ng-model="newImg">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-success" ng-click="addImage()" ng-disabled="{{projectForm.newImg.$error.url}}">Add</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="well">
+                        <p>
+                            <button type="submit" class="btn btn-block btn-primary">{{ submitText }}</button>
+                        </p>
+                        <p ng-show="showDelete">
+                            <button type="button" class="btn btn-block btn-danger" ng-click="deleteProject()">Delete Project</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
