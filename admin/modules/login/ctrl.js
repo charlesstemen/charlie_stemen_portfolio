@@ -1,10 +1,7 @@
-controllers.controller('LoginCtrl', ['$scope', '$location', 'CMSAuth', function ($scope, $location, CMSAuth) {
-  var auth = new CMSAuth();
-
+controllers.controller('LoginCtrl', ['$scope', 'CMSAuth', function ($scope, CMSAuth) {
   $scope.login = function () {
-    console.log('logging in');
     if ($scope.form.$valid) {
-      auth.signIn($scope.user.email, $scope.user.password);
+      CMSAuth.$signInWithEmailAndPassword($scope.user.email, $scope.user.password);
     }
   }
 }]);

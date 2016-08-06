@@ -8,9 +8,22 @@
     <nav top-nav></nav>
     <div ng-view></div>
 
+    <!--@todo: add .min.-->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-    <script src="../bower_components/angular/angular.min.js"></script>
-    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../bower_components/angularfire/dist/angularfire.js"></script>
+
+    <script type="text/javascript">
+        var config = {
+            apiKey: "AIzaSyBxlCx6dzFgqnjAVKJ1mi2BTtCm26Fv-Dc",
+            authDomain: "charlie-stemen-portfolio.firebaseapp.com",
+            databaseURL: "https://charlie-stemen-portfolio.firebaseio.com",
+            storageBucket: "charlie-stemen-portfolio.appspot.com",
+        };
+
+        firebase.initializeApp(config);
+    </script>
 
     <script src="main.js"></script>
     <script src="auth.js"></script>

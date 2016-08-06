@@ -3,20 +3,17 @@ directives.directive('topNav', ['CMSAuth', function (CMSAuth) {
     restrict: 'A',
     replace: true,
     templateUrl: 'includes/top-nav/index.html',
-    link: function(scope, element, attrs) {
-      var auth = new CMSAuth();
-
-      scope.$on('auth.signedIn', function () {
+    link: function(scope, element) {
+      scope.$on('CMSAuth.signedIn', function () {
         element.addClass('in');
       });
 
-      scope.$on('auth.signedOut', function () {
+      scope.$on('CMSAuth.signedOut', function () {
         element.removeClass('in');
       });
 
       scope.signOut = function () {
-        console.log('signing out');
-        auth.signOut();
+        CMSAuth.$signOut();
       }
     }
   }

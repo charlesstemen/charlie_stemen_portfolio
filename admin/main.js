@@ -1,26 +1,23 @@
-var app = angular.module('cms', ['ngRoute', 'app.controllers', 'app.services', 'app.directives']);
+var app = angular.module('cms', ['ngRoute', 'firebase', 'app.controllers', 'app.services', 'app.directives']);
 
 var controllers = angular.module('app.controllers', []);
 var services = angular.module('app.services', []);
 var directives = angular.module('app.directives', []);
 
 app.run(['$rootScope', '$location', function ($rootScope, $location) {
-  var config = {
-    apiKey: "AIzaSyBxlCx6dzFgqnjAVKJ1mi2BTtCm26Fv-Dc",
-    authDomain: "charlie-stemen-portfolio.firebaseapp.com",
-    databaseURL: "https://charlie-stemen-portfolio.firebaseio.com",
-    storageBucket: "charlie-stemen-portfolio.appspot.com",
-  };
-
-  firebase.initializeApp(config);
-
-  $rootScope.signedIn = firebase.auth().currentUser ? true : false;
-
   $rootScope.$on('$routeChangeError', function (event, next, previous, error) {
-    console.log(error);
-    if (error = 'auth.error') {
+    if (error === 'AUTH_REQUIRED') {
       $location.path('/');
     }
+  });
+
+  $rootScope.$on('CMSAuth.signedIn', function () {
+    console.log('here');
+    $location.path('/dashboard');
+  });
+
+  $rootScope.$on('CMSAuth.signedOut', function () {
+    $location.path('/');
   });
 }]);
 
@@ -35,7 +32,7 @@ app.config(['$routeProvider', function ($routeProvider) {
       controller: 'DashboardCtrl',
       resolve: {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
-          return new CMSAuth().requireAuth();
+          return CMSAuth.$requireSignIn();
         }]
       }
     })
@@ -44,7 +41,7 @@ app.config(['$routeProvider', function ($routeProvider) {
       controller: 'ProjectCtrl',
       resolve: {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
-          return new CMSAuth().requireAuth();
+          return CMSAuth.$requireSignIn();
         }]
       }
     })
@@ -53,7 +50,7 @@ app.config(['$routeProvider', function ($routeProvider) {
       controller: 'ProjectCtrl',
       resolve: {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
-          return new CMSAuth().requireAuth();
+          return CMSAuth.$requireSignIn();
         }]
       }
     })
