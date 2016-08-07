@@ -1,51 +1,50 @@
 controllers.controller('ProjectCtrl',
-  ['$scope', '$routeParams', '$location', 'ProjectFactory',
-  function ($scope, $routeParams, $location, ProjectFactory) {
-    $scope.projectKey = 'fbKey' in $routeParams ? $routeParams.fbKey : null;
-    $scope.project = $scope.projectKey ? firebase.database().ref('/projects/' + $scope.projectKey) : null;
-    $scope.title = $scope.project ? 'Editing: ' + $scope.project.title : 'New Project';
-    $scope.submitText = $scope.project ? 'Save Project' : 'Create Project';
-    var projects = firebase.database().ref('/projects');
+  ['$scope', '$routeParams', '$location', '$firebaseObject', 'ProjectFactory',
+  function ($scope, $routeParams, $location, $firebaseObject, Projects) {
+    $scope.project = Projects.$getRecord($routeParams.fbKey);
 
-    projects.end.on('child_added', routeToNewProject);
-    projects.on('child_changed', updateProject);
+    $scope.$watch('project', setBuffer);
+    $scope.$watch('buffer', setBufferText, true);
 
     $scope.submit = function () {
-      console.log($scope.project);
-      var project = $scope.project;
-
-      if ($scope.projectKey) {
-        updateProject(project);
+      if (isNewProject()) {
+        newProject();
       } else {
-        newProject(project);
+        updateProject();
       }
     }
 
-    function newProject (project) {
-      ProjectFactory.newProject(project)
-        .then(function (results) {
-          console.log('promise');
-          console.log(results);
-          if (results.committed === true) {
+    function setBuffer () {
+      $scope.buffer = angular.copy($scope.project);
+    }
 
-          } else {
-            console.log('no spaghetti');
-            $scope.$root.$broadcast('form.message', {
-              type: 'danger',
-              msg: 'Submit Error: Check that you\'ve filled all fields correctly'
-            });
-          }
+    function setBufferText () {
+      $scope.title = isNewProject() ? 'New Project' : 'Editing: ' + $scope.buffer.name;
+      $scope.submitText = isNewProject() ? 'Create Project' : 'Save Project';
+    }
+
+    function isNewProject () {
+      return !($scope.project && $scope.project.$id);
+    }
+
+    function newProject () {
+      if ($scope.projectForm.$valid) {
+        Projects.$add($scope.project)
+          .then(function (ref) {
+            $location.path('/project/edit/' + ref.key);
+          });
+      }
+    }
+
+
+    function updateProject () {
+      Projects.$save($scope.project)
+        .then(function (ref) {
+          $scope.buffer = angular.copy(Projects.$getRecord(ref.key));
+        })
+        .catch(function (error) {
+          console.log(error);
         });
-    }
-
-    function routeToNewProject (snapshot) {
-      $location.path('/project/id/' + snapshot.key());
-    }
-
-
-
-    function updateProject (project) {
-
     }
   }]
 );

@@ -1,5 +1,3 @@
-controllers.controller('DashboardCtrl', ['$scope', 'ProjectFactory', function ($scope, ProjectFactory) {
-  $scope.projects = ProjectFactory.getProjects();
-  console.log($scope.projects);
-  $scope.id = null;
+controllers.controller('DashboardCtrl', ['$scope', 'ProjectFactory', function ($scope, Projects) {
+  $scope.projects = Projects;
 }]);

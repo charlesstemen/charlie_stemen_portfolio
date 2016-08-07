@@ -12,7 +12,6 @@ app.run(['$rootScope', '$location', function ($rootScope, $location) {
   });
 
   $rootScope.$on('CMSAuth.signedIn', function () {
-    console.log('here');
     $location.path('/dashboard');
   });
 
@@ -45,7 +44,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         }]
       }
     })
-    .when('/project/id/:fbKey', {
+    .when('/project/edit/:fbKey', {
       templateUrl: 'modules/project/index.html',
       controller: 'ProjectCtrl',
       resolve: {
