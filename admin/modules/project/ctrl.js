@@ -3,7 +3,7 @@ controllers.controller('ProjectCtrl',
   function ($scope, $routeParams, $location, $firebaseObject, Projects) {
     $scope.project = Projects.$getRecord($routeParams.fbKey);
 
-    $scope.$watch('project', setBuffer);
+    $scope.$watch('project', setBuffer, true);
     $scope.$watch('buffer', setBufferText, true);
 
     $scope.submit = function () {
@@ -15,10 +15,14 @@ controllers.controller('ProjectCtrl',
     }
 
     function setBuffer () {
+      console.log('setting buffer');
+      console.log($scope.project);
       $scope.buffer = angular.copy($scope.project);
     }
 
     function setBufferText () {
+      console.log('buffering');
+      console.log($scope.project);
       $scope.title = isNewProject() ? 'New Project' : 'Editing: ' + $scope.buffer.name;
       $scope.submitText = isNewProject() ? 'Create Project' : 'Save Project';
     }

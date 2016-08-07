@@ -11,10 +11,6 @@ app.run(['$rootScope', '$location', 'ngAnalyticsService', function ($rootScope, 
     }
   });
 
-  $rootScope.$on('CMSAuth.signedIn', function () {
-    $location.path('/dashboard');
-  });
-
   $rootScope.$on('CMSAuth.signedOut', function () {
     $location.path('/');
   });
@@ -27,7 +23,12 @@ app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'modules/login/index.html',
-      controller: 'LoginCtrl'
+      controller: 'LoginCtrl',
+      resolve: {
+        'currentAuth': ['CMSAuth', function (CMSAuth) {
+          return CMSAuth.$waitForSignIn();
+        }]
+      }
     })
     .when('/dashboard', {
       templateUrl: 'modules/dashboard/index.html',
@@ -35,6 +36,9 @@ app.config(['$routeProvider', function ($routeProvider) {
       resolve: {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
           return CMSAuth.$requireSignIn();
+        }],
+        'projects': ['ProjectFactory', function (ProjectFactory) {
+          return ProjectFactory.$loaded();
         }]
       }
     })
@@ -53,6 +57,9 @@ app.config(['$routeProvider', function ($routeProvider) {
       resolve: {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
           return CMSAuth.$requireSignIn();
+        }],
+        'Projects': ['ProjectFactory', function (ProjectFactory) {
+          return ProjectFactory.$loaded();
         }]
       }
     })
@@ -62,6 +69,9 @@ app.config(['$routeProvider', function ($routeProvider) {
       resolve: {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
           return CMSAuth.$requireSignIn();
+        }],
+        'Projects': ['ProjectFactory', function (ProjectFactory) {
+          return ProjectFactory.$loaded();
         }]
       }
     })
