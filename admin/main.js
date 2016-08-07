@@ -1,10 +1,10 @@
-var app = angular.module('cms', ['ngRoute', 'firebase', 'app.controllers', 'app.services', 'app.directives']);
+var app = angular.module('cms', ['ngRoute', 'firebase', 'ngAnalytics', 'app.controllers', 'app.services', 'app.directives']);
 
 var controllers = angular.module('app.controllers', []);
 var services = angular.module('app.services', []);
 var directives = angular.module('app.directives', []);
 
-app.run(['$rootScope', '$location', function ($rootScope, $location) {
+app.run(['$rootScope', '$location', 'ngAnalyticsService', function ($rootScope, $location, ngAnalyticsService) {
   $rootScope.$on('$routeChangeError', function (event, next, previous, error) {
     if (error === 'AUTH_REQUIRED') {
       $location.path('/');
@@ -18,6 +18,9 @@ app.run(['$rootScope', '$location', function ($rootScope, $location) {
   $rootScope.$on('CMSAuth.signedOut', function () {
     $location.path('/');
   });
+
+  //client secret: ukX_AL2b4U4U6Ze_pkSLr5l0
+  ngAnalyticsService.setClientId('940987655008-86t8qsvud3k5i8mgaqqs4fsg0ur16uth.apps.googleusercontent.com');
 }]);
 
 app.config(['$routeProvider', function ($routeProvider) {
@@ -29,6 +32,15 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when('/dashboard', {
       templateUrl: 'modules/dashboard/index.html',
       controller: 'DashboardCtrl',
+      resolve: {
+        'currentAuth': ['CMSAuth', function (CMSAuth) {
+          return CMSAuth.$requireSignIn();
+        }]
+      }
+    })
+    .when('/analytics', {
+      templateUrl: 'modules/analytics/index.html',
+      controller: 'AnalyticsCtrl',
       resolve: {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
           return CMSAuth.$requireSignIn();

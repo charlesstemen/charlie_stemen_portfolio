@@ -1,0 +1,20 @@
+<main id="analytics">
+    <div class="container">
+        <div class="page-header">
+            <h1>Analytics</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ng-analytics-auth label="Hallo:&nbsp;" hide-on-auth="true" auth-container="embed-api-auth-container"></ng-analytics-auth>
+                        <ng-analytics-view view-selector-container="view-selector-container" auth-container="embed-api-auth-container"></ng-analytics-view>
+                        <ng-analytics-chart chart="weeklyChart" auth-container="embed-api-auth-container" view-selector-container="view-selector-container"></ng-analytics-chart>
+                        <ng-analytics-chart chart="yearlyChart" auth-container="embed-api-auth-container" view-selector-container="view-selector-container"></ng-analytics-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
