@@ -37,7 +37,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         'currentAuth': ['CMSAuth', function (CMSAuth) {
           return CMSAuth.$requireSignIn();
         }],
-        'projects': ['ProjectFactory', function (ProjectFactory) {
+        'Projects': ['ProjectFactory', function (ProjectFactory) {
           return ProjectFactory.$loaded();
         }]
       }

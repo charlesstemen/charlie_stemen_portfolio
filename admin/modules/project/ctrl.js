@@ -1,9 +1,9 @@
 controllers.controller('ProjectCtrl',
-  ['$scope', '$routeParams', '$location', '$firebaseObject', 'ProjectFactory',
-  function ($scope, $routeParams, $location, $firebaseObject, Projects) {
+  ['$scope', '$routeParams', '$location', 'Projects',
+  function ($scope, $routeParams, $location, Projects) {
     $scope.project = Projects.$getRecord($routeParams.fbKey);
 
-    $scope.$watch('project', setBuffer, true);
+    $scope.$watch('project', init);
     $scope.$watch('buffer', setBufferText, true);
 
     $scope.submit = function () {
@@ -14,20 +14,21 @@ controllers.controller('ProjectCtrl',
       }
     }
 
+    function init (){
+      setBuffer();
+      $scope.isNewProject();
+    }
+
     function setBuffer () {
-      console.log('setting buffer');
-      console.log($scope.project);
       $scope.buffer = angular.copy($scope.project);
     }
 
     function setBufferText () {
-      console.log('buffering');
-      console.log($scope.project);
-      $scope.title = isNewProject() ? 'New Project' : 'Editing: ' + $scope.buffer.name;
-      $scope.submitText = isNewProject() ? 'Create Project' : 'Save Project';
+      $scope.title = $scope.isNewProject() ? 'New Project' : 'Editing Project: ' + $scope.buffer.title;
+      $scope.submitText = $scope.isNewProject() ? 'Create Project' : 'Save Project';
     }
 
-    function isNewProject () {
+    $scope.isNewProject = function () {
       return !($scope.project && $scope.project.$id);
     }
 

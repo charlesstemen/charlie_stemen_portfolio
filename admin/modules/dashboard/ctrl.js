@@ -1,3 +1,3 @@
-controllers.controller('DashboardCtrl', ['$scope', 'ProjectFactory', function ($scope, Projects) {
+controllers.controller('DashboardCtrl', ['$scope', 'Projects', function ($scope, Projects) {
   $scope.projects = Projects;
 }]);
