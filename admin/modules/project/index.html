@@ -18,23 +18,20 @@
                         <textarea class="form-control" rows="5" name="description" ng-model="project.description"></textarea>
                     </div>
                     <h2>Sections <button type="button" class="btn btn-link">+ add</button></h2>
-                    <div class="panel-group">
-                        <div class="panel panel-default">
+                    <uib-accordion>
+                        <div uib-accordion-group class="panel-default">
                             <div class="panel-heading">
-                                <h4><a role="button"</h4>
+                                <div class="form-group">
+                                    <label>Heading</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Images <a role="button">+ add</a></label>
+                                <input type="file" class="form-control">
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Images</label>
-                        <p ng-show="!project.images.length">No images added</p>
-                        <div class="input-group" ng-repeat="img in project.images">
-                            <input type="url" class="form-control" name="image[]" ng-model="img">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-danger" ng-click="deleteImage($index)">Delete</button>
-                            </span>
-                        </div>
-                    </div>
+                    </uib-accordion>
                     <div class="form-group" ng-class="{'has-error': projectForm.newImg.$error.url && projectForm.newImg.$dirty}">
                         <div class="input-group">
                             <input type="url" class="form-control" name="newImg" ng-model="newImg">
@@ -46,14 +43,21 @@
                 </div>
                 <div class="col-xs-4">
                     <div class="form-group">
+                        <label for="thumbnail">Project Thumbnail</label>
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="http://placehold.it/900x600/3b3b3b/cccccc">
+                            <div class="caption">
+
+                            </div>
+                        </div>
                         <input type="file" class="form-control">
                     </div>
-                    <div class="btn-group btn-group-justified">
-                        <div class="btn-group">
-                            <button type="submit" class="btn btn-block btn-primary">{{ submitText }}</button>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button type="button" class="btn btn-block btn-danger" ng-click="deleteProject()"><i class="glyphicon glyphicon-trash"></i></button>
                         </div>
-                        <div class="btn-group" ng-hide="isNewProject()">
-                            <button type="button" class="btn btn-block btn-danger" ng-click="deleteProject()">Delete Project</button>
+                        <div class="col-xs-6 col-xs-offset-3">
+                            <button type="submit" class="btn btn-block btn-primary">{{ submitText }}</button>
                         </div>
                     </div>
                 </div>
