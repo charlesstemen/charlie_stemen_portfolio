@@ -4,3 +4,27 @@
 a[ng-click] {
   cursor: pointer;
 }
+
+html {
+  height: 100%;
+  background: @navbar-inverse-bg;
+}
+
+body {
+  min-height: 100%;
+  padding-bottom: @navbar-height * 3;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+  }
+}

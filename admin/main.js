@@ -1,4 +1,4 @@
-var app = angular.module('cms', ['ui.bootstrap', 'ngRoute', 'firebase', 'ngAnalytics', 'app.controllers', 'app.services', 'app.directives']);
+var app = angular.module('cms', ['ui.bootstrap', 'ngRoute', 'ngAnimate', 'firebase', 'ngAnalytics', 'app.controllers', 'app.services', 'app.directives']);
 
 var controllers = angular.module('app.controllers', []);
 var services = angular.module('app.services', []);
@@ -16,7 +16,7 @@ app.run(['$rootScope', '$location', 'ngAnalyticsService', function ($rootScope, 
   });
 
   //client secret: ukX_AL2b4U4U6Ze_pkSLr5l0
-  ngAnalyticsService.setClientId('940987655008-86t8qsvud3k5i8mgaqqs4fsg0ur16uth.apps.googleusercontent.com');
+  //ngAnalyticsService.setClientId('940987655008-86t8qsvud3k5i8mgaqqs4fsg0ur16uth.apps.googleusercontent.com');
 }]);
 
 app.config(['$routeProvider', function ($routeProvider) {
