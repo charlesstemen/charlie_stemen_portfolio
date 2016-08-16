@@ -1,6 +1,6 @@
 controllers.controller('ProjectCtrl',
-  ['$scope', '$routeParams', '$location', 'Projects',
-  function ($scope, $routeParams, $location, Projects) {
+  ['$scope', '$routeParams', '$location', '$uibModal', 'Projects',
+  function ($scope, $routeParams, $location, $uibModal, Projects) {
     $scope.project = Projects.$getRecord($routeParams.fbKey);
 
     $scope.$watch('project', init);
@@ -12,6 +12,26 @@ controllers.controller('ProjectCtrl',
       } else {
         updateProject();
       }
+    }
+
+    $scope.deleteProject = function () {
+      var modalInstance = $uibModal.open ({
+        animation: true,
+        templateUrl: 'includes/confirmation/index.html',
+        controller: 'ConfirmationModalCtrl',
+        resolve: {
+          msg: function () {
+            return 'Are you sure you want to delete the project: "' + $scope.project.title + '"?';
+          }
+        }
+      });
+
+      modalInstance.result.then(function () {
+        Projects.$remove($scope.project).then(function () {
+          //clean category refs
+          $location.path('/dashboard');
+        });
+      });
     }
 
     function init (){

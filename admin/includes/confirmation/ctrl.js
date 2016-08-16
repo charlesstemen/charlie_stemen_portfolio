@@ -1,11 +1,11 @@
-controllers.controller('ConfirmationModalCtrl', ['$scope', '$modalInstance', 'msg', function($scope, $modalInstance, msg) {
+controllers.controller('ConfirmationModalCtrl', ['$scope', '$uibModalInstance', 'msg', function($scope, $uibModalInstance, msg) {
   $scope.msg = msg;
 
   $scope.ok = function() {
-    $modalInstance.close();
+    $uibModalInstance.close();
   }
 
   $scope.cancel = function() {
-    $modalInstance.dismiss();
+    $uibModalInstance.dismiss();
   }
 }])
