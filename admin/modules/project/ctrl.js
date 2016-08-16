@@ -7,7 +7,7 @@ controllers.controller('ProjectCtrl',
     $scope.$watch('buffer', setBufferText, true);
 
     $scope.submit = function () {
-      if (isNewProject()) {
+      if ($scope.isNewProject()) {
         newProject();
       } else {
         updateProject();
