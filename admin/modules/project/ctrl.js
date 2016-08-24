@@ -14,6 +14,14 @@ controllers.controller('ProjectCtrl',
       }
     }
 
+    $scope.addSection = function () {
+      if (typeof $scope.project.sections === 'undefined') {
+        $scope.project.sections = [];
+      }
+
+      $scope.project.sections.push({});
+    }
+
     $scope.deleteProject = function () {
       var modalInstance = $uibModal.open ({
         animation: true,
