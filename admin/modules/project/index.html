@@ -62,18 +62,23 @@
                 </div>
                 <div class="col-xs-4">
                     <div class="form-group">
-                        <label for="thumbnail">Project Thumbnail</label>
-                        <div class="thumbnail">
-                            <img class="img-responsive" src="http://placehold.it/900x600/3b3b3b/cccccc">
-                            <div class="caption">
-                                <button class="btn-sm btn-block btn-default"><i class="glyphicon glyphicon-upload"></i> Upload New Image</button>
-                            </div>
+                        <div file-upload
+                             input-id="thumbnail"
+                             upload-model="project.thumbnail"
+                             target-size="1446x964">
                         </div>
+                        <!--<div class="thumbnail">-->
+                            <!--<img class="img-responsive" src="http://placehold.it/900x600/3b3b3b/cccccc">-->
+                            <!--<div class="caption">-->
+
+                                <!--&lt;!&ndash;<button type="button" class="btn-sm btn-block btn-default"><i class="glyphicon glyphicon-upload"></i> Upload New Image</button>&ndash;&gt;-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="well">
                         <div class="checkbox">
                             <label for="is-active">
-                                <input id="is-active" type="checkbox" name="published"> Publish
+                                <input id="is-active" type="checkbox" name="published" ng-model="project.published"> Publish
                             </label>
                             <small class="help-block">Only published content is visible on your site.</small>
                         </div>
@@ -83,7 +88,11 @@
                                 <button type="button" class="btn btn-block btn-danger" ng-click="deleteProject()"><i class="glyphicon glyphicon-trash"></i></button>
                             </div>
                             <div class="col-xs-6 col-xs-offset-3">
-                                <button type="submit" class="btn btn-block btn-primary">{{ submitText }}</button>
+                                <button type="submit"
+                                        class="btn btn-block btn-primary"
+                                        ng-class="{'updating': updating, 'btn-success': success}">
+                                    {{ submitText }}
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,12 @@
+<div class="thumbnail">
+    <img class="img-responsive" ng-src="{{ preview }}">
+    <div class="caption">
+        <div ng-show="uploading">
+            <uib-progressbar class="progress-striped active" value="progress"></uib-progressbar>
+        </div>
+        <label for="{{ inputId }}" class="btn btn-upload btn-block btn-default">
+            <i class="glyphicon glyphicon-upload"></i> Upload New
+            <input id="{{ inputId }}" type="file" class="form-control" ng-model="uploadModel">
+        </label>
+    </div>
+</div>

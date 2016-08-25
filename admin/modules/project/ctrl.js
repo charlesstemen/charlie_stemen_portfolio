@@ -1,6 +1,6 @@
 controllers.controller('ProjectCtrl',
-  ['$scope', '$routeParams', '$location', '$uibModal', 'Projects',
-  function ($scope, $routeParams, $location, $uibModal, Projects) {
+  ['$scope', '$routeParams', '$location', '$uibModal', '$timeout', 'Projects',
+  function ($scope, $routeParams, $location, $uibModal, $timeout, Projects) {
     $scope.project = Projects.$getRecord($routeParams.fbKey);
 
     $scope.$watch('project', init);
@@ -71,12 +71,25 @@ controllers.controller('ProjectCtrl',
 
 
     function updateProject () {
+      $scope.updating = true;
+
       Projects.$save($scope.project)
         .then(function (ref) {
           $scope.buffer = angular.copy(Projects.$getRecord(ref.key));
+          $scope.success = true;
+
+          $timeout(function () {
+            $scope.success = false;
+            $scope.updating = false;
+          }, 2000);
         })
-        .catch(function (error) {
-          console.log(error);
+        .catch(function () {
+          $scope.error = true;
+
+          $timeout(function () {
+            $scope.error = false;
+            $scope.updating = false;
+          }, 2000);
         });
     }
   }]
