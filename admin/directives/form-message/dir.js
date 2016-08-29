@@ -2,7 +2,7 @@ directives.directive('formMessage', [function() {
   return {
     restrict: 'A',
     replace: true,
-    templateUrl: 'includes/form-message/index.html',
+    templateUrl: 'directives/form-message/index.html',
     link: function(scope, element, attrs) {
       scope.alerts = [];
 

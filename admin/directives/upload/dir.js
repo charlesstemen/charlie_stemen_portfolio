@@ -5,7 +5,7 @@ directives.directive('fileUpload', ['UploadFactory', function (UploadFactory) {
     scope: {
       uploadModel: '='
     },
-    templateUrl: 'includes/upload/index.html',
+    templateUrl: 'directives/upload/index.html',
     link: function (scope, element, attrs) {
       var targetSize = 'http://placehold.it/'+ attrs.targetSize +'/3b3b3b/cccccc',
           input = element.find('input'),
