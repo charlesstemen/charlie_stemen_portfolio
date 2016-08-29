@@ -42,9 +42,11 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Text Content</label>
-                                    <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.textContent"></textarea>
+                                <div class="content-blocks" ng-switch="section.type">
+                                    <div class="form-group" ng-switch-when="text">
+                                        <label>Text Content</label>
+                                        <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.textContent"></textarea>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-3 col-xs-offset-9">
@@ -67,13 +69,6 @@
                              upload-model="project.thumbnail"
                              target-size="1446x964">
                         </div>
-                        <!--<div class="thumbnail">-->
-                            <!--<img class="img-responsive" src="http://placehold.it/900x600/3b3b3b/cccccc">-->
-                            <!--<div class="caption">-->
-
-                                <!--&lt;!&ndash;<button type="button" class="btn-sm btn-block btn-default"><i class="glyphicon glyphicon-upload"></i> Upload New Image</button>&ndash;&gt;-->
-                            <!--</div>-->
-                        <!--</div>-->
                     </div>
                     <div class="well">
                         <div class="checkbox">

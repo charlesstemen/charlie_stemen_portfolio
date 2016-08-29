@@ -17,7 +17,6 @@ directives.directive('fileUpload', ['UploadFactory', function (UploadFactory) {
       scope.inputId = attrs.inputId;
 
       scope.uploadFile = function () {
-        console.log('here');
         var file = this.files[0];
 
         scope.uploading = true;

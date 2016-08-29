@@ -4,23 +4,24 @@
             <h1>Dashboard</h1>
         </div>
 
-        <div class="row">
-            <div class="col-xs-6">
-                <section class="model">
-                    <h1>Projects <a href="#/project/new" class="btn btn-link">+ add</a></h1>
-                    <ul class="nav nav-stacked">
-                        <li ng-repeat="project in projects"><a ng-href="#/project/edit/{{ project.$id }}">{{ project.title }}</a></li>
-                    </ul>
-                </section>
+        <section>
+            <h1>Projects <a href="#/project/new" class="btn btn-link">+ add</a></h1>
+            <div class="row">
+                <article class="col-xs-4" ng-repeat="project in projects">
+                    <div class="thumbnail">
+                        <a href="#/project/edit/{{ project.$id }}">
+                            <img ng-src="{{project.thumbnail || 'http://placehold.it/1446x964?text=!'}}">
+                        </a>
+                        <div class="caption">
+                            <p class="lead">{{ project.title }}</p>
+                            <p class="published-status" ng-class="{'text-success': project.published, 'text-warning': !project.published }">
+                                <i class="glyphicon glyphicon-check" ng-show="project.published"></i>
+                                {{ project.published ? 'published' : 'draft' }}
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="col-xs-6">
-                <section class="model">
-                    <h1>Categories <a href="#/category/new" class="btn btn-link">+ add</a></h1>
-                    <ul class="nav nav-stacked">
-                        <li ng-repeat="category in categories"><a ng-href="#/category/edit/{{ category.$id }}">{{ category.name }}</a></li>
-                    </ul>
-                </section>
-            </div>
-        </div>
+        </section>
     </div>
 </main>

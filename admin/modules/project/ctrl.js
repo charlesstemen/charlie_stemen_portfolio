@@ -3,7 +3,7 @@ controllers.controller('ProjectCtrl',
   function ($scope, $routeParams, $location, $uibModal, $timeout, Projects) {
     $scope.project = Projects.$getRecord($routeParams.fbKey);
 
-    $scope.$watch('project', init);
+    $scope.$watch('project', setBuffer);
     $scope.$watch('buffer', setBufferText, true);
 
     $scope.submit = function () {
@@ -42,12 +42,11 @@ controllers.controller('ProjectCtrl',
       });
     }
 
-    function init (){
-      setBuffer();
-      $scope.isNewProject();
-    }
-
     function setBuffer () {
+      if (!$scope.project) {
+        $scope.project = {};
+      }
+
       $scope.buffer = angular.copy($scope.project);
     }
 
