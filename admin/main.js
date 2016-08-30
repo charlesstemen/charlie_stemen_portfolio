@@ -75,4 +75,16 @@ app.config(['$routeProvider', function ($routeProvider) {
         }]
       }
     })
+    .when('/page/edit/:pageType', {
+      templateUrl: 'modules/page/index.html',
+      controller: 'PageCtrl',
+      resolve: {
+        'currentAuth': ['CMSAuth', function (CMSAuth) {
+          return CMSAuth.$requireSignIn();
+        }],
+        'Pages': ['PageFactory', function (PageFactory) {
+          return PageFactory.$loaded();
+        }]
+      }
+    })
 }])
