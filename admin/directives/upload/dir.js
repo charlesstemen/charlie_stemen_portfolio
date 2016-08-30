@@ -3,7 +3,8 @@ directives.directive('fileUpload', ['UploadFactory', function (UploadFactory) {
     restrict: 'A',
     replace: true,
     scope: {
-      uploadModel: '='
+      uploadModel: '=',
+      inputId: '@'
     },
     templateUrl: 'directives/upload/index.html',
     link: function (scope, element, attrs) {
@@ -35,10 +36,7 @@ directives.directive('fileUpload', ['UploadFactory', function (UploadFactory) {
       }
 
       function updateProgress (snapshot) {
-        console.log('updating');
-        console.log(snapshot);
         scope.progress = (snapshot.bytesTransfered / snapshot.totalBytes) * 100;
-        console.log(scope.progress);
         scope.$apply();
       }
 

@@ -19,13 +19,13 @@ controllers.controller('ProjectCtrl',
         $scope.project.sections = [];
       }
 
-      $scope.project.sections.push({});
+      $scope.project.sections.push({images: [], videos: []});
     }
 
     $scope.deleteProject = function () {
-      var modalInstance = $uibModal.open ({
+      var modalInstance = $uibModal.open({
         animation: true,
-        templateUrl: 'includes/confirmation/index.html',
+        templateUrl: 'directives/confirmation/index.html',
         controller: 'ConfirmationModalCtrl',
         resolve: {
           msg: function () {
@@ -40,6 +40,40 @@ controllers.controller('ProjectCtrl',
           $location.path('/dashboard');
         });
       });
+    }
+
+    $scope.deleteSection = function (index) {
+      var modalInstance = $uibModal.open({
+        animation: true,
+        templateUrl: 'directives/confirmation/index.html',
+        controller: 'ConfirmationModalCtrl',
+        resolve: {
+          msg: function () {
+            return 'Are you sure you want to delete the section: "' + $scope.project.sections[index].title + '"?'
+          }
+        }
+      });
+
+      modalInstance.result.then(function () {
+        $scope.project.sections.splice(index, 1);
+      });
+    }
+
+    $scope.addImage = function (index) {
+      console.log('yo');
+      if (typeof $scope.project.sections[index].images === 'undefined') {
+        $scope.project.sections[index].images = [];
+      }
+
+      $scope.project.sections[index].images.push({});
+    }
+
+    $scope.addVideo = function (index) {
+      if (typeof $scope.project.sections[index].videos === 'undefined') {
+        $scope.project.sections[index].videos = [];
+      }
+
+      $scope.project.sections[index].videos.push({});
     }
 
     function setBuffer () {

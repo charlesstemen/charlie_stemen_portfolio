@@ -35,17 +35,45 @@
                                             <input type="radio" name="section.type" value="image" ng-model="section.type"> Image Gallery
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="section.type" value="vimeo" ng-model="section.type"> Vimeo Gallery
+                                            <input type="radio" name="section.type" value="video" ng-model="section.type"> Vimeo Gallery
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="section.type" value="text" ng-model="section.type"> Text Block
                                         </label>
                                     </div>
                                 </div>
-                                <div class="well content-blocks" ng-switch="section.type">
+                                <div class="well content-blocks" ng-switch="section.type" ng-hide="!section.type">
+                                    <div class="row" ng-switch-when="image">
+                                        <div class="col-xs-4" ng-repeat="image in section.images track by $index">
+                                            <div file-upload
+                                                 input-id="{{ 'gallery-image-' + $parent.$index + '-' + $index }}"
+                                                 upload-model="image.src"
+                                                 target-size="1500x1000">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <button type="button" class="btn btn-link" ng-click="addImage($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
+                                        </div>
+                                    </div>
+                                    <div class="row" ng-switch-when="video">
+                                        <div class="col-xs-4" ng-repeat="video in section.videos track by $index">
+                                            <div class="form-group">
+                                                <label for="{{ 'gallery-video-' + $parent.$index + '-' + $index }}">Vimeo Embed Code</label>
+                                                <textarea id="{{ 'gallery-video-' + $parent.$index + '-' + $index }}"
+                                                          class="form-control"
+                                                          rows="4"
+                                                          ng-model="video.embedCode"
+                                                          placeholder="<iframe ...>">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <button type="button" class="btn btn-link" ng-click="addVideo($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
+                                        </div>
+                                    </div>
                                     <div class="form-group" ng-switch-when="text">
                                         <label>Text Content</label>
-                                        <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.textContent"></textarea>
+                                        <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.text"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
