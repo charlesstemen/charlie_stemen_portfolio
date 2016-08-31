@@ -73,6 +73,22 @@ button {
 }
 
 .thumbnail {
+  position: relative;
+
+  .close {
+    height: 28px;
+    width: 28px;
+    padding: 0;
+    line-height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .translate(25%, -25%);
+    .opacity(1);
+  }
+
   .caption {
     .title {
       font-size: 1.2em;

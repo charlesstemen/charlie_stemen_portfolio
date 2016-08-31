@@ -14,6 +14,10 @@ controllers.controller('ProjectCtrl',
       }
     }
 
+    $scope.$on('upload.deleteImage', function (event, section, image) {
+      $scope.project.sections[section].images.splice(image, 1);
+    });
+
     $scope.addSection = function () {
       if (typeof $scope.project.sections === 'undefined') {
         $scope.project.sections = [];

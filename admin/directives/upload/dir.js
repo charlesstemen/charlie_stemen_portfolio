@@ -4,7 +4,9 @@ directives.directive('fileUpload', ['UploadFactory', function (UploadFactory) {
     replace: true,
     scope: {
       uploadModel: '=',
-      inputId: '@'
+      inputId: '@',
+      parent: '@parentIndex',
+      index: '@modelIndex'
     },
     templateUrl: 'directives/upload/index.html',
     link: function (scope, element, attrs) {
@@ -24,6 +26,15 @@ directives.directive('fileUpload', ['UploadFactory', function (UploadFactory) {
         currentTask = UploadFactory.uploadFile(file.name, file);
 
         currentTask.on('state_changed', updateProgress, handleUploadError, handleUploadSuccess);
+      }
+
+      scope.deleteImage = function () {
+        if (scope.parent) {
+          scope.$emit('upload.deleteImage', parseInt(scope.parent), parseInt(scope.index));
+        } else {
+          scope.uploadModel = '';
+          scope.preview = targetSize;
+        }
       }
 
       function updatePreview (url) {

@@ -5,6 +5,9 @@ controllers.controller('PageCtrl',
     $scope.page = $firebaseObject(Pages.$ref().child($scope.pageTitle));
     $scope.submitText = 'Update Page';
 
+    $scope.$on('upload.deleteImage', function (event, section, image) {
+      $scope.page.sections[section].images.splice(image, 1);
+    });
 
     $scope.addSection = function () {
       if (typeof $scope.page.sections === 'undefined') {
