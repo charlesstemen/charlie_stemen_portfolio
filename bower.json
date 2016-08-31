@@ -1,0 +1,27 @@
+{
+  "name": "charlie_stemen_portfolio",
+  "description": "Portfolio for Charles Stemen",
+  "main": "index.js",
+  "authors": [
+    "Zachary Lincoln <znlincoln@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zlincoln/charlie_stemen_portfolio",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angularfire": "^2.0.1",
+    "ngAnalytics": "nganalytics#^1.1.4",
+    "angular-bootstrap": "^2.0.1",
+    "angular-animate": "^1.5.8"
+  }
+}

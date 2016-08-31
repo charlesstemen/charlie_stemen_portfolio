@@ -1,0 +1,35 @@
+<main id="dashboard">
+    <div class="container">
+        <div class="page-header">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="row">
+            <section class="col-xs-9">
+                <h2>Projects <a href="#/project/new" class="btn btn-link">+ add</a></h2>
+                <div class="row">
+                    <article class="col-xs-4" ng-repeat="project in projects">
+                        <div class="thumbnail">
+                            <a href="#/project/edit/{{ project.$id }}">
+                                <img ng-src="{{project.thumbnail || 'http://placehold.it/1446x964?text=!'}}">
+                            </a>
+                            <div class="caption">
+                                <p class="title">{{ project.title }}</p>
+                                <p class="published-status" ng-class="{'text-success': project.published, 'text-warning': !project.published }">
+                                    <i class="glyphicon glyphicon-check" ng-show="project.published"></i>
+                                    {{ project.published ? 'published' : 'draft' }}
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="col-xs-3">
+                <h2>Pages</h2>
+                <ul class="nav nav-stacked">
+                    <li><a href="#/page/edit/photography">Photography</a></li>
+                    <li><a href="#/page/edit/contact">Contact</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</main>

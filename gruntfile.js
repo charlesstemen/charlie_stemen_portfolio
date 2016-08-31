@@ -16,7 +16,23 @@ module.exports = function(grunt){
 	        files: {
 	          'css/master.css': 'css/master.less'
 	        }
-	      }
+	      },
+				admin: {
+					options: {
+						compress: true,
+						yuicompress: true,
+						optimization: 2,
+						paths: ["css"],
+						livereload: true,
+						sourceMap: true,
+						sourceMapFilename: 'admin/styles/app.css.map',
+						sourceMapUrl: 'admin/styles/app.css.map',
+						sourceMapRootpath: 'http://localhost:8888/charlie_stemen_portfolio/admin/styles',
+					},
+					files: {
+						'admin/styles/app.css': 'admin/styles/app.less'
+					}
+				}
 	    },
 	    watch: {
 	      less: {
@@ -27,7 +43,13 @@ module.exports = function(grunt){
 	          'css/**/*.less'
 	        ],
 	        tasks: ['less:development']
-	      }
+	      },
+				admin: {
+					files: [
+							'admin/styles/**/*.less'
+					],
+					tasks: ['less:admin']
+				}
 	    },
 		htmlmin: {
 			dist: {

@@ -1,0 +1,121 @@
+<section id="page" class="detail">
+    <form class="form" name="pageForm" ng-submit="submit()" novalidate>
+        <div class="container">
+            <div class="page-header">
+                <h1>{{ 'Editing: ' + pageTitle + ' page' }}</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div form-message></div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="form-group" ng-class="{'has-error': (pageForm.title.$invalid && pageForm.title.$dirty) || (pageForm.$submitted && pageForm.title.$error.required)}">
+                        <label>Title</label>
+                        <input type="text" class="form-control" name="title" ng-model="page.title" required>
+                    </div>
+                    <div class="form-group" ng-class="{'has-error': (pageForm.description.$invalid && pageForm.description.$dirty)}">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="6" name="description" ng-model="page.description"></textarea>
+                    </div>
+                    <h2>Sections <button type="button" class="btn btn-link" ng-click="addSection()">+ add</button></h2>
+                    <div class="repeatable">
+                        <div class="alert alert-warning" ng-show="!page.sections.length">
+                            No sections exist, <a role="button" ng-click="addSection()">add one</a>.
+                        </div>
+                        <uib-accordion>
+                            <div uib-accordion-group class="panel-default" heading="{{ section.title || 'New Section' }}" ng-repeat="section in page.sections">
+                                <div class="form-group">
+                                    <label>Title</label>
+                                    <input type="text" name="section.title" ng-model="section.title" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Content Type</label>
+                                    <div class="inline-group">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="section.type" value="image" ng-model="section.type"> Image Gallery
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="section.type" value="video" ng-model="section.type"> Vimeo Gallery
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="section.type" value="text" ng-model="section.type"> Text Block
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="well content-blocks" ng-switch="section.type" ng-hide="!section.type">
+                                    <div class="row" ng-switch-when="image">
+                                        <div class="col-xs-4" ng-repeat="image in section.images">
+                                            <div file-upload
+                                                 input-id="{{'gallery-image-' + $parent.$index + '-' + $index}}"
+                                                 upload-model="image.src"
+                                                 parent-index="{{$parent.$index}}"
+                                                 model-index="{{$index}}"
+                                                 target-size="1500x1000">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <button type="button" class="btn btn-link" ng-click="addImage($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
+                                        </div>
+                                    </div>
+                                    <div class="row" ng-switch-when="video">
+                                        <div class="col-xs-4" ng-repeat="video in section.videos track by $index">
+                                            <div class="form-group">
+                                                <label for="{{ 'gallery-video-' + $parent.$index + '-' + $index }}">Vimeo Embed Code</label>
+                                                <textarea id="{{ 'gallery-video-' + $parent.$index + '-' + $index }}"
+                                                          class="form-control"
+                                                          rows="4"
+                                                          ng-model="video.embedCode"
+                                                          placeholder="<iframe ...>">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <button type="button" class="btn btn-link" ng-click="addVideo($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" ng-switch-when="text">
+                                        <label>Text Content</label>
+                                        <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.text"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3 col-xs-offset-9">
+                                        <button type="button" class="btn-xs btn-danger btn-block" ng-click="deleteSection($index)">Delete Section</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </uib-accordion>
+                        <div class="row" ng-show="page.sections.length >= 5">
+                            <div class="col-xs-4 col-xs-offset-4">
+                                <button role="button" class="btn-sm btn-block btn-default" ng-click="addSection()">+ Add Another Section</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="well">
+                        <div class="checkbox">
+                            <label for="is-active">
+                                <input id="is-active" type="checkbox" name="published" ng-model="page.published"> Publish
+                            </label>
+                            <small class="help-block">Only published content is visible on your site.</small>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <button type="button" class="btn btn-block btn-danger" ng-click="deletepage()"><i class="glyphicon glyphicon-trash"></i></button>
+                            </div>
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <button type="submit"
+                                        class="btn btn-block btn-primary"
+                                        ng-class="{'updating': updating, 'btn-success': success}">
+                                    {{ submitText }}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

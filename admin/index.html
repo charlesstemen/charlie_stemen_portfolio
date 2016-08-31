@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="cms">
+<head>
+    <title>Charles Stemen's CMS</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+    <nav top-nav></nav>
+    <div ng-view></div>
+    <footer>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <p class="navbar-text">&copy; Burlington Collective &nbsp;&middot;&nbsp; 802.585.7709 &nbsp;&middot;&nbsp; <a href="mailto:zach@burlingtoncollective.com">zach@burlingtoncollective.com</a></p>
+            </div>
+        </nav>
+    </footer>
+
+    <!--@todo: add .min.-->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="../bower_components/ngAnalytics/src/ng-analytics.js"></script>
+
+    <script type="text/javascript">
+        var config = {
+            apiKey: "AIzaSyBxlCx6dzFgqnjAVKJ1mi2BTtCm26Fv-Dc",
+            authDomain: "charlie-stemen-portfolio.firebaseapp.com",
+            databaseURL: "https://charlie-stemen-portfolio.firebaseio.com",
+            storageBucket: "charlie-stemen-portfolio.appspot.com",
+        };
+
+        firebase.initializeApp(config);
+    </script>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="auth.js"></script>
+    <script type="text/javascript" src="modules/login/ctrl.js"></script>
+    <script type="text/javascript" src="modules/dashboard/ctrl.js"></script>
+    <script type="text/javascript" src="modules/analytics/ctrl.js"></script>
+    <script type="text/javascript" src="modules/project/factory.js"></script>
+    <script type="text/javascript" src="modules/project/ctrl.js"></script>
+    <script type="text/javascript" src="modules/page/factory.js"></script>
+    <script type="text/javascript" src="modules/page/ctrl.js"></script>
+
+    <!-- directives -->
+    <script type="text/javascript" src="directives/top-nav/dir.js"></script>
+    <script type="text/javascript" src="directives/form-message/dir.js"></script>
+    <script type="text/javascript" src="directives/confirmation/ctrl.js"></script>
+    <script type="text/javascript" src="directives/upload/dir.js"></script>
+    <script type="text/javascript" src="directives/upload/factory.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import '../../bower_components/bootstrap/less/bootstrap';
+@icon-font-path: '../../bower_components/bootstrap/fonts/';
+
+@shadow: #362e5f;
+
+a[ng-click] {
+  cursor: pointer;
+}
+
+html {
+  height: 100%;
+  background: @navbar-inverse-bg;
+}
+
+body {
+  min-height: ~"calc(100% + @{navbar-height})";
+  padding-bottom: @navbar-height * 3;
+  background-image: url("https://www.transparenttextures.com/patterns/cream-pixels.png");
+  background-attachment: fixed;
+  position: relative;
+
+  &.modal-open {
+    overflow: auto;
+  }
+
+  > .navbar {
+    background: #fff;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .box-shadow(0 0 71px -16px @shadow);
+
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+button {
+  -webkit-appearance: none;
+}
+
+.btn-xs, .btn-sm, .btn, .btn-lg {
+  border-style: solid;
+  animation: 2s linear 0s normal none infinite progress-bar-stripes;
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+
+  &.updating {
+    background-size: 40px 40px;
+    background-image: linear-gradient(45deg, rgba(235, 235, 235, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(235, 235, 235, 0.15) 50%, rgba(235, 235, 235, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  }
+}
+
+.btn-upload {
+  position: relative;
+  cursor: pointer;
+
+  input {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    .opacity(0);
+  }
+}
+
+.thumbnail {
+  position: relative;
+
+  .close {
+    height: 28px;
+    width: 28px;
+    padding: 0;
+    line-height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .translate(25%, -25%);
+    .opacity(1);
+  }
+
+  .caption {
+    .title {
+      font-size: 1.2em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
