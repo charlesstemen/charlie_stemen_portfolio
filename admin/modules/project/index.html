@@ -32,13 +32,13 @@
                                     <label>Content Type</label>
                                     <div class="inline-group">
                                         <label class="radio-inline">
-                                            <input type="radio" name="section.type" value="image" ng-model="section.type"> Image Gallery
+                                            <input type="radio" name="{{ 'section-' + $index + '-type' }}" value="image" ng-model="section.type"> Image Gallery
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="section.type" value="video" ng-model="section.type"> Vimeo Gallery
+                                            <input type="radio" name="{{ 'section-' + $index + '-type' }}" value="video" ng-model="section.type"> Vimeo Gallery
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="section.type" value="text" ng-model="section.type"> Text Block
+                                            <input type="radio" name="{{ 'section-' + $index + '-type' }}" value="text" ng-model="section.type"> Text Block
                                         </label>
                                     </div>
                                 </div>
