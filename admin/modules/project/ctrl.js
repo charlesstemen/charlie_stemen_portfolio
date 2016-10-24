@@ -6,6 +6,13 @@ controllers.controller('ProjectCtrl',
     $scope.$watch('project', setBuffer);
     $scope.$watch('buffer', setBufferText, true);
 
+    console.log('hello');
+
+    $scope.sectionSortOptions = {
+      handle: '> .sort-handle',
+      axis: 'y'
+    }
+
     $scope.submit = function () {
       if ($scope.isNewProject()) {
         newProject();
@@ -64,7 +71,6 @@ controllers.controller('ProjectCtrl',
     }
 
     $scope.addImage = function (index) {
-      console.log('yo');
       if (typeof $scope.project.sections[index].images === 'undefined') {
         $scope.project.sections[index].images = [];
       }
