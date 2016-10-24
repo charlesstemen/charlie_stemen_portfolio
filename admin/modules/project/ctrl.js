@@ -9,8 +9,17 @@ controllers.controller('ProjectCtrl',
     console.log('hello');
 
     $scope.sectionSortOptions = {
-      handle: '> .sort-handle',
-      axis: 'y'
+      axis: 'y',
+      sort: function (event, ui) {
+        ui.item.sortable.model.isCollapsed = true;
+        //var index = $(event.target).index();
+        //
+        //$scope.project.sections[index].isCollapsed = true;
+      }
+    }
+
+    $scope.gallerySortOptions = {
+      'ui-floating': true
     }
 
     $scope.submit = function () {

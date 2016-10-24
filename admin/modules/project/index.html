@@ -24,72 +24,79 @@
                         </div>
                         <div class="panel-group" ui-sortable="sectionSortOptions" ng-model="project.sections">
                             <div class="panel panel-default" ng-repeat="section in project.sections track by $index">
-                                <div class="btn btn-default sort-handle sort-handle-panel"><i class="glyphicon glyphicon-move"></i></div>
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">
-                                        <a role="button">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title pull-left">
+                                        <a role="button" ng-click="section.isCollapsed = !section.isCollapsed">
                                             {{ section.title || 'New Section' }}
                                         </a>
                                     </h3>
+                                    <div class="btn btn-default sort-handle sort-handle-panel pull-right"><i class="glyphicon glyphicon-move"></i></div>
                                 </div>
-                                <div class="panel-body">
-                                    <div class="form-group">
-                                        <label>Title</label>
-                                        <input type="text" name="section.title" ng-model="section.title" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Content Type</label>
-                                        <div class="inline-group">
-                                            <label class="radio-inline">
-                                                <input type="radio" value="image" ng-model="section.type"> Image Gallery
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" value="video" ng-model="section.type"> Vimeo Gallery
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" value="text" ng-model="section.type"> Text Block
-                                            </label>
+                                <div class="panel-collapse collapse" uib-collapse="section.isCollapsed">
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input type="text" name="section.title" ng-model="section.title" class="form-control">
                                         </div>
-                                    </div>
-                                    <div class="well content-blocks" ng-switch="section.type" ng-hide="!section.type">
-                                        <div class="row" ng-switch-when="image">
-                                            <div class="col-xs-4" ng-repeat="image in section.images">
-                                                <div file-upload
-                                                     input-id="{{ 'gallery-image-' + $parent.$index + '-' + $index }}"
-                                                     upload-model="image.src"
-                                                     parent-index="{{$parent.$index}}"
-                                                     model-index="{{$index}}"
-                                                     target-size="1500x1000">
+                                        <div class="form-group">
+                                            <label>Content Type</label>
+                                            <div class="inline-group">
+                                                <label class="radio-inline">
+                                                    <input type="radio" value="image" ng-model="section.type"> Image Gallery
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" value="video" ng-model="section.type"> Vimeo Gallery
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" value="text" ng-model="section.type"> Text Block
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="well content-blocks" ng-switch="section.type" ng-hide="!section.type">
+                                            <div class="row" ng-switch-when="image">
+                                                <div class="col-xs-12" ng-show="section.images.length > 6">
+                                                    <button type="button" class="btn btn-link" ng-click="addImage($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
+                                                </div>
+                                                <div ui-sortable="gallerySortOptions" ng-model="section.images">
+                                                    <div class="col-xs-4" ng-repeat="image in section.images">
+                                                        <div file-upload
+                                                             input-id="{{ 'gallery-image-' + $parent.$index + '-' + $index }}"
+                                                             upload-model="image.src"
+                                                             parent-index="{{$parent.$index}}"
+                                                             model-index="{{$index}}"
+                                                             target-size="1500x1000">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12">
+                                                    <button type="button" class="btn btn-link" ng-click="addImage($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-4">
-                                                <button type="button" class="btn btn-link" ng-click="addImage($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
-                                            </div>
-                                        </div>
-                                        <div class="row" ng-switch-when="video">
-                                            <div class="col-xs-4" ng-repeat="video in section.videos track by $index">
-                                                <div class="form-group">
-                                                    <label for="{{ 'gallery-video-' + $parent.$index + '-' + $index }}">Vimeo Embed Code</label>
+                                            <div class="row" ng-switch-when="video">
+                                                <div class="col-xs-4" ng-repeat="video in section.videos track by $index">
+                                                    <div class="form-group">
+                                                        <label for="{{ 'gallery-video-' + $parent.$index + '-' + $index }}">Vimeo Embed Code</label>
                                                 <textarea id="{{ 'gallery-video-' + $parent.$index + '-' + $index }}"
                                                           class="form-control"
                                                           rows="4"
                                                           ng-model="video.embedCode"
                                                           placeholder="<iframe ...>">
                                                 </textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <button type="button" class="btn btn-link" ng-click="addVideo($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-4">
-                                                <button type="button" class="btn btn-link" ng-click="addVideo($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
+                                            <div class="form-group" ng-switch-when="text">
+                                                <label>Text Content</label>
+                                                <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.text"></textarea>
                                             </div>
                                         </div>
-                                        <div class="form-group" ng-switch-when="text">
-                                            <label>Text Content</label>
-                                            <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.text"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-3 col-xs-offset-9">
-                                            <button type="button" class="btn-xs btn-danger btn-block" ng-click="deleteSection($index)">Delete Section</button>
+                                        <div class="row">
+                                            <div class="col-xs-3 col-xs-offset-9">
+                                                <button type="button" class="btn-xs btn-danger btn-block" ng-click="deleteSection($index)">Delete Section</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
