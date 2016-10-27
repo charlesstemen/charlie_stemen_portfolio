@@ -6,6 +6,18 @@ controllers.controller('ProjectCtrl',
     $scope.$watch('project', setBuffer);
     $scope.$watch('buffer', setBufferText, true);
 
+    $scope.sectionSortOptions = {
+      axis: 'y',
+      'ui-floating': 'auto',
+      sort: function () {
+        $scope.$digest();
+      }
+    }
+
+    $scope.gallerySortOptions = {
+      'ui-floating': true
+    }
+
     $scope.submit = function () {
       if ($scope.isNewProject()) {
         newProject();
@@ -23,7 +35,7 @@ controllers.controller('ProjectCtrl',
         $scope.project.sections = [];
       }
 
-      $scope.project.sections.push({images: [], videos: []});
+      $scope.project.sections.push({type: 'text', images: [], videos: []});
     }
 
     $scope.deleteProject = function () {
@@ -64,7 +76,6 @@ controllers.controller('ProjectCtrl',
     }
 
     $scope.addImage = function (index) {
-      console.log('yo');
       if (typeof $scope.project.sections[index].images === 'undefined') {
         $scope.project.sections[index].images = [];
       }

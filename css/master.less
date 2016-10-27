@@ -6,6 +6,10 @@
 @soft-gray: #e7e8e9;
 
 @brand-primary: @charcoal;
+@font-family-sans-serif: 'Teko', sans-serif;
+@font-family-base: @font-family-sans-serif;
+@headings-font-family: @font-family-base;
+@font-size-base: 18px;
 
 @viewport{
   zoom: 1.0;
@@ -22,9 +26,10 @@ html{
 }
 
 body{
-	padding-top: 76px;
+	padding-top: 189px;
 	color: @charcoal;
 	background: @soft-gray;
+	font-family: @font-family-base;
 }
 
 header.navbar{
@@ -99,6 +104,7 @@ footer{
 }
 
 #banner{
+	display: none;
 	background: @black;
 	margin-bottom: 37px;
 	text-align: center;
@@ -118,6 +124,35 @@ footer{
 			}
 		}
 	}
+}
+
+.modal {
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 0;
+	position: relative;
+
+	.close {
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		font-size: 2em;
+		color: @white;
+		position: absolute;
+		top: 0;
+		right: -40px;
+		.opacity(1);
+		border-radius: 50%;
+		z-index: 1;
+		text-shadow: none;
+	}
+}
+
+.modal-dialog {
+	width: 75%;
+	cursor: initial;
 }
 
 @import 'globals';

@@ -15,7 +15,7 @@ directives.directive('projectDescription', ['$window', function($window){
 			function checkPosition(){
 				scope.$apply(function(){
 					scope.offset = {width: $(element).parent().width()+'px'}
-					scope.affixed = 265 <= angular.element($window).scrollTop(); //378
+					scope.affixed = 76 <= angular.element($window).scrollTop(); //378
 				});
 			}
 		}
