@@ -1,21 +1,28 @@
-<figure class="thumbnail">
-    <img class="img-responsive sort-handle" ng-src="{{ preview }}">
-    <div class="caption">
-        <div ng-show="uploading">
-            <uib-progressbar class="progress-striped active" value="progress"></uib-progressbar>
-        </div>
-        <div class="btn-group btn-group-justified" role="group">
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger" ng-click="deleteImage()"><i class="glyphicon glyphicon-trash"></i></button>
+<figure class="upload-preview row">
+    <div class="col-xs-7">
+        <div class="media">
+            <div class="media-left">
+                <img class="media-object" ng-src="{{ preview }}">
             </div>
-            <div class="btn-group">
-                <label for="{{ inputId }}" class="btn btn-upload btn-default">
-                    <i class="glyphicon glyphicon-upload"></i>
-                    <input id="{{ inputId }}" type="file" class="form-control" ng-model="uploadModel">
-                </label>
-            </div>
-            <div class="btn-group">
-                <div class="btn btn-default sort-handle"><i class="glyphicon glyphicon-move"></i></div>
+            <div class="media-body">
+                <h4>Image {{ index }}</h4>
+                <div ng-show="uploading">
+                    <uib-progressbar class="progress-striped active" value="progress"></uib-progressbar>
+                </div>
+                <div class="btn-group btn-group-justified" role="group">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-danger" ng-click="deleteImage()"><i class="glyphicon glyphicon-trash"></i></button>
+                    </div>
+                    <div class="btn-group">
+                        <label for="{{ inputId }}" class="btn btn-sm btn-upload btn-default">
+                            <i class="glyphicon glyphicon-upload"></i>
+                            <input id="{{ inputId }}" type="file" class="form-control" ng-model="uploadModel">
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <div class="btn btn-sm btn-default sort-handle"><i class="glyphicon glyphicon-move"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

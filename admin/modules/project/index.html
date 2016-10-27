@@ -39,26 +39,30 @@
                                             <input type="text" name="section.title" ng-model="section.title" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label>Content Type</label>
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="6" ng-model="section.description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Gallery Type</label>
                                             <div class="inline-group">
+                                                <label class="radio-inline">
+                                                    <input type="radio" value="text" ng-model="section.type"> No Gallery
+                                                </label>
                                                 <label class="radio-inline">
                                                     <input type="radio" value="image" ng-model="section.type"> Image Gallery
                                                 </label>
                                                 <label class="radio-inline">
                                                     <input type="radio" value="video" ng-model="section.type"> Vimeo Gallery
                                                 </label>
-                                                <label class="radio-inline">
-                                                    <input type="radio" value="text" ng-model="section.type"> Text Block
-                                                </label>
                                             </div>
                                         </div>
-                                        <div class="well content-blocks" ng-switch="section.type" ng-hide="!section.type">
+                                        <div class="content-blocks" ng-switch="section.type" ng-hide="!section.type">
                                             <div class="row" ng-switch-when="image">
-                                                <div class="col-xs-12" ng-show="section.images.length > 6">
-                                                    <button type="button" class="btn btn-link" ng-click="addImage($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
+                                                <div class="col-xs-12">
+                                                    <h3>Images <button type="button" class="btn btn-link" ng-click="addImage($index)">+ add</button></h3>
                                                 </div>
-                                                <div ui-sortable="gallerySortOptions" ng-model="section.images">
-                                                    <div class="col-xs-4" ng-repeat="image in section.images">
+                                                <div ui-sortable="sectionSortOptions" ng-model="section.images">
+                                                    <div class="col-xs-12" ng-repeat="image in section.images">
                                                         <div file-upload
                                                              input-id="{{ 'gallery-image-' + $parent.$index + '-' + $index }}"
                                                              upload-model="image.src"
@@ -68,29 +72,22 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-xs-12">
-                                                    <button type="button" class="btn btn-link" ng-click="addImage($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
-                                                </div>
                                             </div>
                                             <div class="row" ng-switch-when="video">
                                                 <div class="col-xs-4" ng-repeat="video in section.videos track by $index">
                                                     <div class="form-group">
                                                         <label for="{{ 'gallery-video-' + $parent.$index + '-' + $index }}">Vimeo Embed Code</label>
-                                                <textarea id="{{ 'gallery-video-' + $parent.$index + '-' + $index }}"
-                                                          class="form-control"
-                                                          rows="4"
-                                                          ng-model="video.embedCode"
-                                                          placeholder="<iframe ...>">
-                                                </textarea>
+                                                        <textarea id="{{ 'gallery-video-' + $parent.$index + '-' + $index }}"
+                                                                  class="form-control"
+                                                                  rows="4"
+                                                                  ng-model="video.embedCode"
+                                                                  placeholder="<iframe ...>">
+                                                        </textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-4">
                                                     <button type="button" class="btn btn-link" ng-click="addVideo($index)"><i class="glyphicon glyphicon-plus"></i> add</button>
                                                 </div>
-                                            </div>
-                                            <div class="form-group" ng-switch-when="text">
-                                                <label>Text Content</label>
-                                                <textarea rows="8" class="form-control" name="section.textContent" ng-model="section.text"></textarea>
                                             </div>
                                         </div>
                                         <div class="row">

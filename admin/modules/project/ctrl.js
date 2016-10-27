@@ -6,15 +6,11 @@ controllers.controller('ProjectCtrl',
     $scope.$watch('project', setBuffer);
     $scope.$watch('buffer', setBufferText, true);
 
-    console.log('hello');
-
     $scope.sectionSortOptions = {
       axis: 'y',
-      sort: function (event, ui) {
-        ui.item.sortable.model.isCollapsed = true;
-        //var index = $(event.target).index();
-        //
-        //$scope.project.sections[index].isCollapsed = true;
+      'ui-floating': 'auto',
+      sort: function () {
+        $scope.$digest();
       }
     }
 
@@ -39,7 +35,7 @@ controllers.controller('ProjectCtrl',
         $scope.project.sections = [];
       }
 
-      $scope.project.sections.push({images: [], videos: []});
+      $scope.project.sections.push({type: 'text', images: [], videos: []});
     }
 
     $scope.deleteProject = function () {
